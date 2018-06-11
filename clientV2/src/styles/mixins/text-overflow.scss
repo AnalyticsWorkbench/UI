@@ -1,0 +1,8 @@
+// WebKit-style focus
+
+@mixin text-overflow() {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

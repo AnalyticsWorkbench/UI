@@ -1,0 +1,75 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+// Imports
+// -----------------------------------------------------------------------------
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,400,300,300italic,400italic,700italic);
+
+// Typography
+// -----------------------------------------------------------------------------
+
+html {
+	font-size: $font-size-root;
+}
+
+body {
+	font-feature-settings: "kern", "liga", "pnum";
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+}
+
+// Reset fonts for relevant elements
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+// Headings
+// -----------------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-heading;
+	font-size: $font-size-base;
+	font-weight: 700;
+	line-height: $line-height-heading;
+	margin: 0;
+}
+
+h1 { font-size: $font-size-xxlg; }
+h2 { font-size: $font-size-xlg; }
+h3 { font-size: $font-size-lg; }
+h4 { font-size: $font-size-base; }
+h5 { font-size: $font-size-base; }
+h6 { font-size: $font-size-sm; }
+
+
+// Paragraph
+// -----------------------------------------------------------------------------
+
+p {
+	margin: 0;
+}
+
+// Links
+// -----------------------------------------------------------------------------
+
+a {
+	text-decoration: none;
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}

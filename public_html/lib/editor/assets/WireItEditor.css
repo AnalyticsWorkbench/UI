@@ -1,0 +1,341 @@
+
+body {
+	margin:0;
+	padding:0;
+	/*font-size: 10px;*/
+}
+
+
+/* YUI layout */
+.yui-skin-sam .yui-layout .yui-layout-hd {
+	background-position: 0 -1300px;
+}
+.yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-hd h2 {
+	color: black;
+}
+/* Accordion View */
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle.active {
+	border-left: 0;
+	border-right: 0;
+	border-color: #808080;
+	color: black;
+	background-position: 0 -1300px;
+}
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle {
+	font-size: 13px;
+	height: 13px;
+}
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle.active:hover {
+	background-position: 0 -1500px;
+}
+
+
+/**
+ * TOP
+ */
+#top {
+	position: relative;
+}
+#top .topright {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+#top .logo {
+   /*font-family: cursive;
+   color:  #3366CC;*/
+	height: 25px;
+   font-size: 16px; /*30px;*/
+   font-weight: bold;
+   padding-left: 10px;
+   padding-top: 4px;
+
+	border-bottom: 1px solid #808080;
+	background: transparent url(../../../lib/yui/assets/skins/sam/sprite.png) repeat-x scroll 0 -1300px;
+}
+
+/* Toolbar */
+#toolbar {
+   /*position: absolute;
+   top: 10px;
+   left: 300px;*/
+	width: 100%;
+	height: 23px;
+	position: relative;
+}
+
+#toolbar .yui-button {
+   margin: 0px;
+}
+#toolbar .yui-button button {
+   padding-left: 2em;
+   font-size: 92%;
+}
+
+#WiringEditor-saveButton button {
+ background:transparent url(database_save.png) no-repeat scroll 10% 50%;
+
+}
+#WiringEditor-deleteButton button {
+ background:transparent url(delete.png) no-repeat scroll 10% 50%;
+}
+#WiringEditor-adminButton button {
+ background:transparent url(pen.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-newButton button {
+ background:transparent url(add.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-loadButton button {
+ background:transparent url(application_go.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-helpButton button {
+ background:transparent url(help.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-executeButton button {
+ background:transparent url(bullet_go.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-uploadButton button {
+ background:transparent url(comment.png) no-repeat scroll 10% 50%;
+}
+
+#WiringEditor-exportButton button {
+ background:transparent url(application_edit.png) no-repeat scroll 10% 50%;
+}
+#WiringEditor-expertModeButton button {
+    background:transparent url(aus.png) no-repeat scroll 10% 50%;
+}
+#WiringEditor-wiringButton button {
+    background:transparent url(aus.png) no-repeat scroll 10% 50%;
+}
+#WiringEditor-logoutButton button {
+    background:transparent url(logout.png) no-repeat scroll 10% 50%;
+}
+#WiringEditor-loadResultsButton button {
+    background:transparent url(application_go.png) no-repeat scroll 10% 50%;
+}
+/**
+ * savedStatus
+ */
+div.savedStatus {
+	color:orange;
+	font-size:27pt;
+	left:570px;
+	position:absolute;
+	/*top:10px;*/
+}
+
+/**
+ * LEFT
+ */
+ 
+#left {
+   
+}
+ 
+ 
+/**
+ * Module list 
+ */
+ 
+.WiringEditor-module {
+   cursor: move;
+   /*background-color: #AADDDD;*/
+   margin: 1px;
+   padding: 2px;
+   font-size: 9pt;
+   -moz-border-radius: 2px;
+   /*height: 16px;*/
+   text-align: left;
+
+	background-color:#F6F6F6;
+	border:1px solid #F1F1F1;
+}
+
+#left .WiringEditor-module:hover {
+   /*color: red;*/
+
+	background-color:#DDECFE;
+	border:1px solid #C3DAF9;
+}
+
+.WiringEditor-module img {
+   margin-left: 5px;
+}
+
+.WiringEditor-module span {
+   margin-left: 5px;
+}
+
+#moduleProxy {
+   opacity: 0.8;
+   filter: alpha(opacity = 80);
+}
+
+/**
+ * CENTER
+ */
+
+#center {
+	height: 100%;
+}
+
+
+/**
+ * RIGHT
+ */
+ 
+#right #propertiesForm {
+	font-size: 10px;
+}
+
+#layerMap {
+   /*width: 80%;*/
+	width: 100%;
+}
+
+#layerMap canvas.WireIt-LayerMap {
+	position: relative;
+	/*width: 250px; Don't put any width or it breaks the layerMap */
+	
+	border: 0;
+	width: 100%;
+}
+
+#propertiesForm div.inputEx-Group div.inputEx-label {
+	width: 50px;
+}
+
+#right{
+
+}
+
+/**
+ * Result elements
+ */
+.Workbench-result {
+    cursor: move;
+    /*background-color: #AADDDD;*/
+    margin: 1px;
+    padding: 2px;
+    font-size: 9pt;
+    -moz-border-radius: 2px;
+    /*height: 16px;*/
+    text-align: left;
+
+    background-color:#F6F6F6;
+    border:1px solid #C3DAF9;
+}
+
+.Workench-result span {
+    margin-left: 5px;
+}
+
+/**
+ * Dialogs
+ */
+#loadPanelBody {
+	max-height:300px;
+	overflow-y:scroll;
+	overflow-x:auto;
+	text-align:left;
+}
+
+#loadPanelBody ul {
+   margin-left: 20px;
+}
+
+#loadPanelBody ul li {
+	background-color:#FFFFFF;
+	list-style-type:none;
+	margin:2px;
+	padding:2px 10px;
+	-moz-border-radius:7px;
+	-webkit-border-radius: 7px;
+}
+
+#loadPanelBody ul li:hover {
+	background-color: #CCCCFF;
+}
+
+#alertPanelBody {
+	padding: 10px 0;
+}
+
+.loadTable td{
+	max-width:100px;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.tableSwitchBtn{
+	cursor:pointer;
+	padding: 5px; 
+	display:inline; 
+	box-Shadow: inset 0px 0px 3px gray; 
+	background: white;
+	margin-right:5px;
+}
+#loadTableDescriptionTooltip{
+	word-wrap: break-word;      /* for IE, Firefox since 3.5 and Opera since 10.5 */
+	overflow: hidden;           /* required for text-overflow */
+	text-overflow: ellipsis;    /* for IE and WebKit (Safari, Chrome) */
+	-o-text-overflow: ellipsis; /* for Opera since 9.0 */
+	max-Width:30%;
+	background: white;
+	position: absolute;
+	z-Index: 10;
+	padding: 5px;
+	/*opacity: 0.85;*/
+	 
+}
+/*.loadTable table tbody tr:hover{
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}*/
+.Workbench-result
+{
+	white-space: normal; 
+	word-wrap: break-word;      /* for IE, Firefox since 3.5 and Opera since 10.5 */
+	overflow: hidden;           /* required for text-overflow */
+	text-overflow: ellipsis;    /* for IE and WebKit (Safari, Chrome) */
+	-o-text-overflow: ellipsis; /* for Opera since 9.0 */
+}
+.nameResult
+{
+	display: inline-block;
+	font-weight: bold;
+}
+.descriptionResult
+{
+	display: inline-block;
+	color: darkgray;
+	font-weight: normal;
+}
+.renameResult
+{
+	display: inline-block;
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+.discardResult
+{
+	display: inline-block;
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+.trEdit
+{
+    /*display: inline-block;*/
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+
+}
+
+.title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-black;
+    text-transform: uppercase;
+    margin-bottom: $size-lg;
+}
+
+.categories {
+    margin-left: -$size-lg;
+    margin-right: -$size-lg;
+}
+
+.category + .category {
+    margin-top: $size-lg;
+}

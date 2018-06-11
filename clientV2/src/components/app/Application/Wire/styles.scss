@@ -1,0 +1,6 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    z-index: $zindex-wire;
+}

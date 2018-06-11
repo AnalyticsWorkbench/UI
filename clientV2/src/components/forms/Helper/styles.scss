@@ -1,0 +1,14 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.helper {
+    display: flex;
+}
+
+.columnLeft {
+    flex-grow: 0;
+}
+
+.columnRight {
+    flex-grow: 1;
+}

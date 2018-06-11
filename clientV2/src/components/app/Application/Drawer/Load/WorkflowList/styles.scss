@@ -1,0 +1,46 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {}
+
+.workflow {
+    padding: $size-base $size-lg;
+    display: flex;
+    cursor: pointer;
+    border-top: 1px solid $colors-black-20;
+    &:hover {
+        background-color: $colors-black-10;
+    }
+}
+
+.icon {
+    flex-grow: 0;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.name {
+    font-weight: $font-weight-bold;
+}
+
+.actions {
+    font-size: $font-size-sm;
+    flex-grow: 0;
+    margin-left: $size-base;
+
+    > * + * {
+        margin-left: $size-sm;
+    }
+}
+
+.date {
+    margin-top: $size-sm;
+    font-size: $font-size-sm;
+    color: $colors-black-60;
+}
+
+.description {
+    color: $colors-black-60;
+}

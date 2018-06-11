@@ -1,0 +1,104 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 90px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+#footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+/* Trying to build the screenshot container...
+-------------------------------------------------- */
+/*
+.container-screenshot {
+    width: auto!important;
+    margin: 30px -30px -31px!important;
+    padding: 20px!important;
+    overflow: hidden;
+    height: auto!important;
+    font-size: 13px!important;
+    line-height: 16px!important;
+    text-align: left;
+    background: transparent!important;
+    border: solid #866ab3!important;
+    border-width: 1px 0!important;
+}
+
+@media (min-width: 480px) {
+    .container-screenshot {
+        width: 330px!important;
+        margin: 20px auto!important;
+        border-radius: 4px;
+        border-width: 1px!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-screenshot {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-screenshot {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        margin: 0!important;
+        padding: 15px!important;
+        width: 330px!important;
+    }
+}
+*/
+
+/* Trying to resize the screenshot...
+-------------------------------------------------- */
+.jumbotron-screenshot {
+    display: table-cell;
+    width: 0px;
+    margin-top: auto;
+}
+
+@media (min-width: 480px) {
+    .jumbotron-screenshot {
+        width: 220px!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron-screenshot {
+        width: 400px!important;
+    }
+}

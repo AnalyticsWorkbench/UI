@@ -1,0 +1,138 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+// Button
+// -----------------------------------------------------------------------------
+
+.button {
+    display: inline-block;
+    margin-bottom: 0;
+
+    border: 0;
+    outline: 0;
+    padding: 0;
+
+    font-family: inherit;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: normal;
+    text-transform: uppercase;
+
+    // Reset unusual Firefox-on-Android default style
+    // see https://github.com/necolas/normalize.css/issues/214
+    background-image: none;
+    background-color: transparent;
+
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.button {
+    height: 3em;
+    line-height: 3em;
+    min-width: 3em;
+
+    border-radius: 9999px;
+
+    font-size: 0.9em;
+    font-weight: $font-weight-bold;
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        opacity: 0.7;
+    }
+}
+
+// Firefox: Get rid of the inner focus border
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+// Inner
+// -----------------------------------------------------------------------------
+
+.inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.inner > * + * {
+    margin-left: $size-sm;
+}
+
+.inner > * {
+    &:first-child { margin-left: $size-base * 1.5; }
+    &:last-child { margin-right: $size-base * 1.5; }
+}
+
+// Icon
+// -----------------------------------------------------------------------------
+
+.icon {
+    &:only-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Spinner
+// -----------------------------------------------------------------------------
+
+.spinner {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+    &:only-child {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Label
+// -----------------------------------------------------------------------------
+
+.label {}
+
+// Block
+// -----------------------------------------------------------------------------
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+// Appearance
+// -----------------------------------------------------------------------------
+
+.appearance-default {
+    color: $colors-black;
+    background-color: $colors-black-20;
+    &:hover {
+        background-color: $colors-black-25;
+    }
+    .spinnerGradient {
+        stop-color: $colors-black;
+    }
+}
+
+.appearance-highlight {
+    color: $colors-white;
+    background-color: $colors-black-90;
+    &:hover {
+        background-color: $colors-black-80;
+    }
+    .spinnerGradient {
+        stop-color: $colors-white;
+    }
+}

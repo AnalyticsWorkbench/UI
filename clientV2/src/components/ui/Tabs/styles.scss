@@ -1,0 +1,24 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid $colors-black-20;
+}
+
+.tab {
+    line-height: 1;
+    cursor: pointer;
+    padding: $size-base;
+    font-weight: $font-weight-bold;
+    border: 1px solid $colors-black-20;
+    border-bottom: none;
+}
+
+.tab + .tab {
+    border-left: none;
+}
+
+.active {
+    background-color: $colors-black-15;
+}

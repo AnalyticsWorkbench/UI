@@ -1,0 +1,48 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {}
+
+.result {
+    padding: $size-base $size-lg;
+    display: flex;
+    cursor: pointer;
+    border-top: 1px solid $colors-black-20;
+    &:hover {
+        background-color: $colors-black-10;
+    }
+}
+
+.icon {
+    flex-grow: 0;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.name {
+    font-weight: $font-weight-bold;
+    margin-bottom: $size-base;
+}
+
+.singleResult {
+    padding-top: $size-sm;
+    padding-bottom: $size-sm;
+    align-items: center;
+    display: flex;
+}
+
+.singleResultName {
+    flex-grow: 1;
+    margin-right: $size-lg;
+}
+
+.singleResultAction {
+    font-size: $font-size-xs;
+    flex-grow: 0;
+}
+
+.singleResult + .singleResult  {
+    border-top: 1px solid $colors-black-20;
+}

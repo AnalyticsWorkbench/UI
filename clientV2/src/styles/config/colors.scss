@@ -1,0 +1,71 @@
+// Colors
+// -----------------------------------------------------------------------------
+
+$colors-primary:                #00c4db;
+$colors-secondary:              #e40061;
+
+$colors-warning:                #E7C600;
+$colors-positive:               #85C020;
+$colors-negative:               #E44646;
+
+$colors-white:                  #fff;
+$colors-black:                  #0F0F10;
+$colors-dark:                   #24252e;
+
+// Shades
+// -----------------------------------------------------------------------------
+
+$colors-primary-50: lighten($colors-primary, 50%);
+
+$colors-warning-55: lighten($colors-warning, 45%);
+
+$colors-positive-95: lighten($colors-positive, 5%);
+$colors-positive-90: lighten($colors-positive, 10%);
+$colors-positive-85: lighten($colors-positive, 15%);
+$colors-positive-80: lighten($colors-positive, 20%);
+$colors-positive-75: lighten($colors-positive, 25%);
+$colors-positive-70: lighten($colors-positive, 30%);
+$colors-positive-65: lighten($colors-positive, 35%);
+$colors-positive-60: lighten($colors-positive, 40%);
+$colors-positive-55: lighten($colors-positive, 45%);
+$colors-positive-50: lighten($colors-positive, 50%);
+
+$colors-negative-95: lighten($colors-negative, 5%);
+$colors-negative-90: lighten($colors-negative, 10%);
+$colors-negative-85: lighten($colors-negative, 15%);
+$colors-negative-80: lighten($colors-negative, 20%);
+$colors-negative-75: lighten($colors-negative, 25%);
+$colors-negative-70: lighten($colors-negative, 30%);
+$colors-negative-65: lighten($colors-negative, 35%);
+$colors-negative-60: lighten($colors-negative, 40%);
+$colors-negative-55: lighten($colors-negative, 45%);
+$colors-negative-50: lighten($colors-negative, 50%);
+
+$colors-black-95: lighten($colors-black, 5%);
+$colors-black-90: lighten($colors-black, 10%);
+$colors-black-85: lighten($colors-black, 15%);
+$colors-black-80: lighten($colors-black, 20%);
+$colors-black-75: lighten($colors-black, 25%);
+$colors-black-70: lighten($colors-black, 30%);
+$colors-black-65: lighten($colors-black, 35%);
+$colors-black-60: lighten($colors-black, 40%);
+$colors-black-55: lighten($colors-black, 45%);
+$colors-black-50: lighten($colors-black, 50%);
+$colors-black-45: lighten($colors-black, 55%);
+$colors-black-40: lighten($colors-black, 60%);
+$colors-black-35: lighten($colors-black, 65%);
+$colors-black-30: lighten($colors-black, 70%);
+$colors-black-25: lighten($colors-black, 75%);
+$colors-black-20: lighten($colors-black, 80%);
+$colors-black-15: lighten($colors-black, 85%);
+$colors-black-10: lighten($colors-black, 90%);
+
+$colors-dark-110: darken($colors-dark, 10%);
+$colors-dark-105: darken($colors-dark, 5%);
+$colors-dark-102: darken($colors-dark, 2%);
+$colors-dark-95: lighten($colors-dark, 5%);
+$colors-dark-90: lighten($colors-dark, 10%);
+$colors-dark-85: lighten($colors-dark, 15%);
+$colors-dark-80: lighten($colors-dark, 20%);
+$colors-dark-75: lighten($colors-dark, 25%);
+$colors-dark-70: lighten($colors-dark, 30%);

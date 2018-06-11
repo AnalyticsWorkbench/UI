@@ -1,0 +1,30 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {}
+
+.title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-black;
+    text-transform: uppercase;
+    margin-bottom: $size-lg;
+}
+
+.workflows {
+    margin-left: -$size-lg;
+    margin-right: -$size-lg;
+}
+
+.empty {
+    border-top: 1px solid $colors-black-20;
+    padding: $size-lg;
+    margin-left: -$size-lg;
+    margin-right: -$size-lg;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    color: $colors-black-60;
+}
+
+.tabs {
+    margin-bottom: -1px;
+}

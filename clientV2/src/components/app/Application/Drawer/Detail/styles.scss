@@ -1,0 +1,66 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    > * + * { margin-top: $size-base;}
+}
+
+.header {
+    > * + * { margin-top: $size-base;}
+}
+
+.title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-black;
+    text-transform: uppercase;
+}
+
+.name {
+    vertical-align: middle;
+}
+
+.category {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: $size-base;
+    padding: $size-sm;
+
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    line-height: 1;
+
+    background-color: $colors-black-50;
+    color: $colors-white;
+    border-radius: 2px;
+}
+
+.description {
+    color: $colors-black-50;
+}
+
+.empty {
+    padding: $size-lg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $colors-black-60;
+    font-weight: $font-weight-bold;
+}
+
+.tabs {
+    margin-top: $size-lg;
+    margin-left: -$size-lg;
+    margin-right: -$size-lg;
+    padding-left: $size-lg;
+    padding-right: $size-lg;
+}
+
+.inspector {
+    margin-top: $size-lg;
+}

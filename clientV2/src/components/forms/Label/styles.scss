@@ -1,0 +1,8 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.label {
+    @include text-overflow();
+    text-transform: none;
+    color: $colors-black;
+}

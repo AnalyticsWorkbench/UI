@@ -1,0 +1,24 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+
+}
+
+.section {
+    > * + * {
+        margin-top: $size-base;
+    }
+}
+
+.section + .section {
+    margin-top: $size-lg;
+}
+
+.label {
+    font-weight: $font-weight-bold;
+}
+
+.inspector {
+
+}

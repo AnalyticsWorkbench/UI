@@ -1,0 +1,12 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    cursor: pointer;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: $colors-black-80;
+    // z-index: $zindex-terminal;
+}

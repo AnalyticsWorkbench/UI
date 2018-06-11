@@ -1,0 +1,40 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.title {
+    display: flex;
+    background: $colors-black-75;
+    color: $colors-white;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    padding: $size-base;
+}
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    text-align: left;
+}
+
+.name {
+    flex-grow: 1;
+    @include text-overflow();
+}
+
+.actions {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: $size-base;
+
+    > * + * {
+        margin-left: $size-sm;
+    }
+}
+
+.action {
+    opacity: 0.7;
+    display: inline-block;
+    &:hover {
+        opacity: 1;
+    }
+}

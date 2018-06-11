@@ -1,0 +1,31 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.table {
+    width: 100%;
+
+    td {
+        padding-top: $size-base;
+        padding-bottom: $size-base;
+    }
+
+    td + td {
+        padding-left: $size-base;
+    }
+}
+
+tr + tr {
+    td {
+        border-top: 1px solid $colors-black-20;
+    }
+}
+
+.bodyColumnRemove {
+    text-align: right;
+}
+
+.headColumnInput {}
+
+.headColumnAdd {
+    text-align: right;
+}

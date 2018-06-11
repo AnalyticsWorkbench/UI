@@ -1,0 +1,46 @@
+{
+  "name": "webworkbench",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "async": "~0.2.9",
+    "body-parser": "*",
+    "checksum": "~0.1.1",
+    "cli-table": "~0.2.0",
+    "compression": "*",
+    "cookie-parser": "*",
+    "colors": "~0.6.2",
+    "connect-redis": "3.x.x",
+    "cron": "^1.0.9",
+    "crypto": "0.0.3",
+    "ejs": "~2.5.x",
+    "express": "4.14.x",
+    "express-session": "1.x.x",
+    "fs-extra": "~0.6.4",
+    "ftp": "0.3.x",
+    "method-override": "*",
+    "moment": "~2.4.0",
+    "morgan": "*",
+    "mqtt": "1.5.x",
+    "node-uuid": "~1.4.1",
+    "nodemailer": "~0.5.6",
+    "passport": "*",
+    "passport-local": "*",
+    "passport.socketio": "*",
+    "pg": "6.1.2",
+    "pg-promise": "^4.3.7",
+    "pg-pubsub": "*",
+    "readline": "0.0.3",
+    "session.socket.io": "*",
+    "socket.io": "*",
+    "sqlspaces": "0.1.x"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  },
+  "scripts": {
+    "test": "mocha tests --recursive"
+  }
+}

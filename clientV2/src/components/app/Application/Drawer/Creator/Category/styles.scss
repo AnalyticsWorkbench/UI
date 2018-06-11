@@ -1,0 +1,43 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+
+}
+
+.label {
+    padding: 0 $size-lg;
+    font-weight: $font-weight-bold;
+    margin-bottom: $size-sm;
+    color: $colors-black-60;
+}
+
+.filters {
+
+}
+
+.filter {
+    padding: $size-sm $size-lg;
+    display: flex;
+    cursor: pointer;
+    border-top: 1px solid $colors-black-20;
+    &:hover {
+        background-color: $colors-black-10;
+    }
+    // &:last-child {
+    //     border-bottom: 1px solid $colors-black-20;
+    // }
+}
+.filterIcon {
+    flex-grow: 0;
+}
+.filterInfo {
+    flex-grow: 1;
+}
+.filterName {
+    font-weight: $font-weight-bold;
+}
+.filterLegend {
+    font-size: $font-size-sm;
+    color: $colors-black-60;
+}

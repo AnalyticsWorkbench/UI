@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" value="IE=8"/>
+    <title>SISOB Workbench Prototype</title>
+
+    <!-- InputEx CSS -->
+    <!-- <link type='text/css' rel='stylesheet' href='lib/inputex/lib/inputex/css/inputEx.css'/> -->
+
+    <!-- setting initial scale to 1.0 prevents any scaling smaller than that (chrome) ...weird -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.001"/> -->
+
+    <!-- future work: set maximum-scale to 1.0 and handle the zooming only for the workflow canvas -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/workbench.min.css"/>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!--<script src="./js/workbench_all.min.js"></script>-->
+
+<!-- for debugging -->
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/jquery.mobile-1.3.2.min.js"></script>
+    <!--<script src="lib/jquery.mobile-1.4.0.min.js"></script>-->
+    <script src="lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="lib/jquery.ui.touch-punch.min.js"></script>
+    <!-- YUI -->
+    <script type="text/javascript" src="lib/yui/utilities/utilities.js"></script>
+    <script type="text/javascript" src="lib/yui/container/container-min.js"></script>
+    <script type="text/javascript" src="lib/yui/json/json-min.js"></script>
+    <script type="text/javascript" src="lib/excanvas.js"></script>
+    <!-- Socket.IO library -->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <!-- for direct SQLSpaces connection -->
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="lib/tuplespace.js"></script>
+    <!-- WireIt -->
+    <script type="text/javascript" src="lib/inputEx.js"></script>
+    <script type="text/javascript" src="lib/WireIt-Lib.js"></script>
+    <script type="text/javascript" src="js/WireIt-Terminals.js"></script>
+    <script type="text/javascript" src="js/Legacy.js"></script>
+    <script type="text/javascript" src="js/SISOBContainer.js"></script>
+    <script type="text/javascript" src="js/workbench.js"></script>
+    <script type="text/javascript" src="js/socket.js"></script>
+    <!-- WireIt Adapters-->
+    <script type="text/javascript" src="lib/adapters/tsconnector.js"></script>
+    <script type="text/javascript" src="lib/adapters/nodeconnector.js"></script>
+    <!--Spinner library-->
+    <script type="text/javascript" src="lib/spin.js"></script>
+
+
+    <style>
+            /*
+            div.WireIt-Container {
+                width: 300px; Prevent the modules from scratching on the right
+
+            }
+            */
+        div.WireIt-Container {
+            width: auto;
+            min-width: 150px;
+        }
+
+        legend.inputEx-Group-legend {
+            width: 300px;
+        }
+
+        div.inputEx-Group div.inputEx-label {
+            width: 150px;
+        }
+
+        div.inputEx-description {
+            color: #0000A0;
+            font-size: 95%;
+            width: 120px;
+        }
+
+        div.inputEx-TypeField-PropertiesPanel {
+            z-index: 7;
+        }
+    </style>
+
+
+    <script>
+
+        var start = function () {
+
+            console.log("PAGEINIT");
+            showLoadingSisob(true);
+            // from lib/socket.js
+            SC.prepare();
+        };
+
+        // this gets once when the page is loaded. We handle the workbench and the login dialog as entry points.
+        $(document).one('pageinit', start);
+
+
+        $(window).bind('beforeunload', function(){
+            console.log(GLOBAL_WORKBENCH);
+            if(GLOBAL_WORKBENCH && !GLOBAL_WORKBENCH.isSaved()
+                    && GLOBAL_WORKBENCH.layer.containers.length > 0) // do not ask if there are no containers in the workflow
+            // we do not have an undo functionality anyways and the current results that might be ''lost'' can be loaded again
+            //   via previous results
+            {
+                return 'You have NOT saved your workflow and will lose the data! Do you still want to leave?';
+            }
+
+        });
+
+//        register swipe to open right panel (does not work, probably because the canvas handles this as scrolling)
+//                    $("#content").on("swipeleft", function(){
+//                        alert("swipe");
+//                        $("#addPanel").panel("open");
+//                    });
+    </script>
+
+
+</head>
+
+<body>
+
+<!-- preload the sisob logo because it is used in the JQM loading screen -->
+<img height='40px' style="display:none;" src='./logos/logo-SISOB-wb.svg'>
+
+<div id="workbench" data-role="page">
+
+    <div data-role="panel" id="right" data-position="right" data-display="overlay" > <!-- data-dismissible="false" to not allow close by clicking outside the panel -->
+
+        <!--
+        <div data-role="collapsible" data-mini="true" data-collapsed="true" data-collapsed-icon='arrow-r' data-expanded-icon='arrow-d'>
+            <h3>Overview</h3>
+            <div class="yui-accordion-content hidden">
+                <div id="layerMap"><canvas class="WireIt-LayerMap"></canvas></div>
+            </div>
+        </div>
+        -->
+        <div data-role="collapsible" data-mini="true" data-collapsed="false" data-collapsed-icon='arrow-r' data-expanded-icon='arrow-d'>
+            <h3>Progress</h3>
+                <div id="infoDisplay" style="height: 30px">
+                    <div id="infoSpinner">
+                        <div id="spinnerGraphics" style="width: 30px; margin-left: 10px; float: left">
+                            <div id="spinnerText" style="width: 150px; margin-left: 5px; margin-top: 10px; float: left">
+
+            </div></div></div></div>
+        </div>
+        <div data-role="collapsible" data-mini="true" data-collapsed="false" data-collapsed-icon='arrow-r' data-expanded-icon='arrow-d'>
+            <h3>Results</h3>
+            <div id="infoTexts"></div>
+        </div>
+
+        <br/>
+        <br/>
+        <a href="#" id="btnLoadPreviousResults">Load previous results</a>
+    </div><!-- /panel -->
+
+
+    <div data-role="panel" id="addPanel" data-position="left" data-display="overlay" >
+        <ul id="moduleSearch" data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search modules...">
+        </ul>
+
+        <div class="addContainer"></div>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="b" data-tap-toggle="false" data-disable-page-zoom="true">
+
+<!--
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+
+            <a data-role="button" data-icon="minus" data-iconpos="notext" id="zoomMinus" href="#">
+                -
+            </a>
+            <a data-role="button" data-icon="plus" data-iconpos="notext" id="zoomPlus" href="#">
+                +
+            </a>
+        </div>
+ -->
+
+        <h3 id="headerText">
+            <!-- <div class="logo"><a href='http://sisob.lcc.uma.es/' target='_blank'><img src='logos/logo-SISOB-wb.svg' height="20px" style="padding-right: 1em" /></a>
+            -->
+            <a href='http://sisob.lcc.uma.es/' target='_blank'><img src='./logos/logo-SISOB-wb.svg' height="20px" style="padding-right: 1em" /></a>SISOB Workbench
+           <!--  </div> -->
+        </h3>
+
+        <div id="menu_top" class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+
+            <a data-role="button" data-icon="arrow-r" id="menuExecuteHeader" class="menuExecute" href="#">
+                Execute
+            </a>
+
+        </div>
+
+    </div><!-- /header -->
+
+    <div data-role="content" id="main_content">
+        <div id="center">
+        </div>
+    </div><!-- /content -->
+
+    <div data-theme="b" data-role="footer" data-position="fixed" data-tap-toggle="false">
+
+        <div id="menu_bottom" class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+
+            <a data-role="button" data-rel="popup" data-icon="gear" id="headerMenu" data-transition="slideup" href="#popupMenu">
+                Actions...
+            </a>
+            <div data-role="popup" id="popupMenu" data-theme="b" data-overlay-theme="a">
+                <ul id="menuList" data-role="listview" data-inset="true" data-theme="c">
+                </ul>
+            </div>
+
+            <a data-role="button" data-icon="bars" href="#right">
+                Results
+            </a>
+        </div>
+
+
+        <h3 id="footerText">
+            <span id="saveIndicator">*</span>
+        </h3>
+
+
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+
+        <a id="addButtonFooter" href="#addPanel" data-role="button" data-inline="true" data-transition="slideup" data-icon="plus" data-theme="b">Add</a>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div data-role="dialog" id="aboutDialog">
+    <div data-role="header" data-theme="b"><h3>About</h3></div>
+
+    <div data-role="content">
+        <h1 style='padding-top: 15px; padding-bottom: 10px; margin-left: auto; margin-right: auto'>The is the touch-enabled version of the social network analysis workbench.</h1>
+        <p style='margin-left: auto; margin-right: auto; text-align:  left'><a href='http://sisob.lcc.uma.es/' target='_blank'><img src='./logos/logo-SISOB-wb.svg' style='vertical-align: middle; height: 60px' /></a><img src='./logos/seventh.png' style='vertical-align: middle' />
+            <img src='./logos/flag.png' style='vertical-align: middle' /><br>
+            <br />SISOB Consortium 2011-2013.<br /><br>
+            The SISOB project is supported by the European Commission, call FP7-SCIENCE-IN-SOCIETY-2010-1, as a Collaborative Project under the 7th Framework Programme, Grant agreement no.:&nbsp;266588
+        </p>
+
+    </div>
+</div>
+
+<div data-role="dialog" id="loadDialog">
+    <div data-role="header" data-theme="b"><h3>Load Workflow...</h3></div>
+
+    <div data-role="content" id="loadDialogContent">
+
+    </div>
+</div>
+
+<div data-role="dialog" id="anyDialog">
+    <div data-role="header" data-theme="b"><h3 id="anyDialogHeader" >&nbsp;</h3></div>
+
+    <div data-role="content" id="anyDialogContent">
+    </div>
+</div>
+
+<div data-role="dialog" id="saveDialog">
+    <div data-role="header" data-theme="b"><h3 id="saveDialogHeader" >Save Workflow...</h3></div>
+
+    <div data-role="content" id="saveDialogContent">
+    </div>
+</div>
+
+
+<div data-role="dialog" id="loadPreviousResultsDialog">
+    <div data-role="header" data-theme="b"><h3 id="loadPrevHeader" >Load Results...</h3></div>
+
+    <div data-role="content" id="loadPreviousResultsDialogContent">
+    </div>
+</div>
+
+</body>
+</html>

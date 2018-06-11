@@ -1,0 +1,48 @@
+// Media queries breakpoints
+// -----------------------------------------------------------------------------
+// Define the breakpoints at which your layout will change,
+// adapting to different screen sizes.
+
+// Large screen / wide desktop
+$screen-xlg-min:                 1600px;
+
+// Large screen / wide desktop
+$screen-lg-min:                 1200px;
+$screen-lg-max:                 ($screen-xlg-min - 1);
+
+// Medium screen / desktop
+$screen-md-min:                  992px;
+$screen-md-max:                 ($screen-lg-min - 1);
+
+// Small screen / tablet
+$screen-sm-min:                 768px;
+$screen-sm-max:                 ($screen-md-min - 1);
+
+// Extra small screen / phone
+$screen-xs-max:                 ($screen-sm-min - 1);
+
+// Grid
+// -----------------------------------------------------------------------------
+
+$grid-columns:                  12;
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:             30px;
+
+
+// Container sizes
+// -----------------------------------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width);
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width);
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop;

@@ -1,0 +1,59 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.group {
+    transition: background-color 200ms;
+
+    // Spacing top, bottom
+    padding-top: $size-sm;
+    padding-bottom: $size-sm;
+    margin-bottom: $size-sm;
+
+    // Spacing left, right
+    margin-left: -$size-lg;
+    margin-right: -$size-lg;
+    padding-left: $size-lg;
+    padding-right: $size-lg;
+
+    @media (min-width: $screen-sm-min) {
+        margin-left: -$size-base;
+        margin-right: -$size-base;
+        padding-left: $size-base;
+        padding-right: $size-base;
+    }
+}
+
+.columnLabel {
+    .alignment-horizontal & {
+        @media (min-width: $screen-sm-min) {
+            text-align: right;
+        }
+    }
+}
+
+.columnChildren {
+    font-weight: 500;
+    > * + * {
+        margin-top: $size-base;
+    }
+}
+
+.columnChildrenNoInput {
+    padding-top: $input-height / 4.2;
+}
+
+.message {
+    color: orange;
+    font-weight: 500;
+    margin-top: $size-sm;
+    text-transform: none;
+    display: flex;
+}
+
+.messageColumnIcon {
+    flex-grow: 0;
+}
+
+.messageColumnText {
+    flex-grow: 1;
+}

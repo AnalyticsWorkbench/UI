@@ -1,0 +1,25 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    opacity: 0.8;
+    font-size: $font-size-sm;
+}
+
+.group + .group {
+    margin-top: $size-sm;
+}
+
+.label {
+    color: $colors-black;
+    font-weight: $font-weight-bold;
+    @include text-overflow();
+}
+
+.value {
+    @include text-overflow();
+}
+
+.warning {
+    color: orange;
+}

@@ -1,0 +1,95 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    z-index: $zindex-drawer;
+    display: flex;
+    flex-direction: column;
+    background-color: $colors-white;
+    border-left: 1px solid $colors-black-20;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 35%;
+    transform: translateX(100%);
+    transition: transform 150ms;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.scrollbars {
+    flex-grow: 1;
+}
+
+.body {
+    padding: $size-lg;
+}
+
+.tabs {
+    background-color: $colors-white;
+    font-size: $font-size-lg;
+    position: absolute;
+
+    left: calc(#{-2 * $size-lg} - 1px);
+}
+
+.tab {
+    position: relative;
+    width: 2 * $size-lg;
+    height: 2 * $size-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $colors-black-75;
+
+    &:hover, &.active {
+        color: $colors-black;
+        background-color: $colors-black-15;
+    }
+
+    &:hover {
+        .tabLabel { display: block; }
+    }
+}
+
+.tab + .tab {
+    border-top: 1px solid $colors-black-20;
+}
+
+.tabLabel {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: $size-lg - $size-lg/2;
+    left: calc(-200px - #{$size-base});
+    text-align: right;
+}
+
+.tabLabelInner {
+    height: $size-lg;
+    line-height: $size-lg;
+    padding: 0 $size-sm;
+    display: inline-block;
+    background-color: $colors-black-85;
+    color: $colors-white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    border-radius: 3px;
+}
+
+$execute-color: #DC3777;
+
+.execute {
+    background-color: $execute-color;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: darken($execute-color, 5%);
+    }
+}

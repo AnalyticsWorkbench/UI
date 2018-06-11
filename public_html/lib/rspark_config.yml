@@ -1,0 +1,2 @@
+default:
+  spark.executor.memory: 2g

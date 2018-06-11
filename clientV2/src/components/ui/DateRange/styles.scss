@@ -1,0 +1,47 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+
+}
+
+.input {}
+
+.input + .input {
+    margin-top: $size-base;
+}
+
+.value {
+    display: block;
+    width: 100%;
+
+    line-height: $input-height;
+    height: $input-height;
+    padding-left: $size-sm;
+    padding-right: $size-sm;
+
+    font-size: $font-size-base;
+    font-weight: 500;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border-width: 2px;
+    border-style: solid;
+
+    border-color: $colors-black-20;
+    background-color: $colors-white;
+    cursor: pointer;
+}
+
+.picker {
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+    background-color: $colors-white;
+    border: 1px solid $colors-black-20;
+    overflow: hidden;
+    padding-top: $size-base;
+}
+
+.actions {
+    margin-top: $size-base;
+    font-size: $font-size-sm;
+}

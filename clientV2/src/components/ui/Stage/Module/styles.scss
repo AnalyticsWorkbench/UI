@@ -1,0 +1,33 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    position: absolute;
+    display: flex;
+    z-index: $zindex-module;
+}
+
+.terminals {
+    z-index: 100;
+    width: 10px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.terminalsIn {
+    margin-right: -5px;
+}
+
+.terminalsOut {
+    margin-left: -5px;
+}
+
+.terminal + .terminal {
+    margin-top: 10px;
+}
+
+.module {
+    flex-grow: 1;
+}

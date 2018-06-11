@@ -1,0 +1,27 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/no-multi-comp": 0,
+    "react/no-did-mount-set-state": 0,
+    "block-scoped-var": 0,
+    "padded-blocks": 0,
+    "indent": [0, 4],
+    "new-cap": 0,
+    "comma-dangle": 0,
+    "camelcase": 0,
+    "id-length": 0,
+    "no-nested-ternary": 0,
+    "no-alert": 0
+  },
+  "plugins": [
+    "react"
+  ]
+}

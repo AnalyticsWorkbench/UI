@@ -1,0 +1,22 @@
+@import '~styles/config/index';
+@import '~styles/mixins/index';
+
+.container {
+    cursor: pointer;
+    width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $colors-white;
+    color: $colors-black-60;
+    border-radius: 5px;
+}
+
+.summary {
+    padding: $size-base;
+}
+
+.footer {
+    padding: $size-sm $size-base;
+    background: $colors-black-20;
+    font-size: $font-size-sm;
+}
