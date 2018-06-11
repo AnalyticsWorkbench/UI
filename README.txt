@@ -19,4 +19,4 @@ Main file is workbench.js
   - then run "node workbench.js"
   
   
-  See https://github.com/AnalyticsWorkbench/Components for more details on system setup
+  See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
