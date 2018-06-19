@@ -17,3 +17,6 @@ Main file is workbench.js
   - first install necessary module by "npm install" in this directory
   - [not always] second step: run "node usercreator.js"
   - then run "node workbench.js"
+  
+  
+  See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
