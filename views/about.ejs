@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<% include includes/head %>
+
+<body>
+
+<% include includes/navbar %>
+
+<div class="container">
+    <h3>What is the Analytics Workbench?</h3>
+    <p>
+        The Analytics Workbench is a tool for performing different kinds of analyses
+        with a web-based user interface and the computations being performed on a server backend.
+        It offers an explicit representation of analysis workflows.
+    </p>
+</div>
+
+<div class="container">
+    <h3>How much does it cost?</h3>
+    <p>
+        The workbench is for free! The demo version accessible here is freely accessible.
+        In the future we plan to release a version with individual registration and user credentials here,
+        which will also be for free.
+        <br />
+        In the future we will also offer the workbench as downloadable package for installing it
+        in a local environment. If you are interested in doing so, please contact us.
+    </p>
+</div>
+
+<div class="container">
+    <h3>How do you handle security and privacy?</h3>
+    <p>
+        You need to be logged in to use the workbench. The login is used on the one hand to control
+        if you can execute analysis processes at all and on the other hand to control access to
+        stored information like saved workflows, uploaded data, or analysis results.
+        <br />
+        The demo version running here can be accessed using guest as username and password.
+        As all users share the same account they also share all the information. For the demo version,
+        all user generated content (workflows, data, results) may be deleted at any time without
+        additional warning.
+    </p>
+    <p>
+        We plan to offer personalized accounts soon, so please come back, we will keep you informed!
+    </p>
+</div>
+
+<div class="container">
+    <h3>It's great but I would like to see ... in there!</h3>
+    <p>
+        The workbench is designed for extensibility. There are currently two main ways of adding new
+        analysis features to it: On the one hand the R Analysis component of the workbench allows adding
+        new scripts. On the other hand the workbench can be extended by programming additional analysis
+        components. These can be based on number of languages, including Java and Python.
+    </p>
+    <p>
+        If you are interested in adding to the workbench, please get in touch with us. If you believe
+        you can't directly contribute by programming additional features yourself but still would like
+        to see something in the workbench that is not yet available, please also feel free to contact us.
+    </p>
+</div>
+
+<div class="container">
+    <h3>How does it work?</h3>
+    <p>
+        The user interface of the classic version of the workbench as well as the main workspace of
+        the mobile version of the workbench are based on
+        <a href="http://dev.lshift.net/james/wireit/wireit/index.html" target="_blank">
+            the WireIt framework
+        </a>. The mobile version additionally also uses the
+        <a href="http://jquerymobile.com/" target="_blank">
+            jQuery mobile framework
+        </a>.
+        The computational backend is based on a multi-agent architecture using an
+        <a href="http://sqlspaces.collide.info/" target="_blank">
+            SQLSpaces server
+        </a> as communication platform.
+    </p>
+    <p>
+        For the landing page (the part you are currently on) we are using the
+        <a href="http://getbootstrap.com/" target="_blank">
+            Bootstrap framework
+        </a> and the icons from
+        <a href="http://glyphicons.com/" target="_blank">
+            Glyphicons
+        </a> provided with that framework.
+    </p>
+</div>
+
+<div class="container">
+    <h3>How can I get updates on news about the workbench?</h3>
+    <p>
+        If you want to be informed about news on the workbench, please visit this page again.
+        We will update it regularly!
+    </p>
+</div>
+
+<div class="container">
+    <h3>How can I get in touch with the team behind the workbench?</h3>
+    <p>
+        If you like the workbench, spread the word! If you have any problems, suggestions, or additional
+        questions, drop us a mail!
+    </p>
+    <p>
+        email: <script type="text/javascript">eval(unescape("%68%72%6e%72%6a%30%32%3d%5b%27%25%37%37%25%36%66%25%37%32%25%36%62%25%36%32%25%36%35%25%36%65%25%36%33%25%36%38%27%2c%5b%27%25%36%39%25%36%65%25%36%36%25%36%66%27%2c%27%25%36%33%25%36%66%25%36%63%25%36%63%25%36%39%25%36%34%25%36%35%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%77%70%6c%6f%67%32%39%3d%75%6e%65%73%63%61%70%65%28%68%72%6e%72%6a%30%32%29%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%77%70%6c%6f%67%32%39%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%68%72%6e%72%6a%30%32%29%29%3b"));</script>
+    </p>
+</div>
+
+<% include includes/footer %>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./lib/jquery-1.10.2.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+
+<% include includes/head %>
+
+<body>
+
+<% include includes/navbar %>
+
+    <div class="container">
+
+        <h3>Automatic Execution of Workflows</h3>
+
+        <hr class="divider" />
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#ae-tab-overview" data-toggle="tab">Overview</a></li>
+            <li><a href="#ae-tab-add" data-toggle="tab">Add</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="ae-tab-overview">
+
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h4>Currently Active Workflows</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-default btn-block" id="btn_ae_refreshActive"><span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span> Refresh</button>
+                    </div>
+                </div>
+
+                <table class="table table-hover" id="ae_overview_table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Next execution</th>
+                            <th>Repetition Interval</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- will be filled with server response -->
+                    </tbody>
+                </table>
+
+                <div class="alert alert-info" id="ae_overview_loading">
+                    Please wait ... loading information from the server.
+                </div>
+
+                <div class="alert alert-warning hidden" id="ae_overview_empty">
+                    No running workflows found on the server.
+                </div>
+
+
+                <form name="ae_display_form" role="form">
+
+                    <div class="form-group">
+                        <label for="ae_display_wf_name">Workflow name</label>
+                        <textarea rows="1" class="form-control" id="ae_display_wf_name" disabled></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ae_display_wf_description">Workflow description</label>
+                        <textarea rows="4" class="form-control" id="ae_display_wf_description" disabled></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ae_display_wf_time">Next execution in ...</label>
+                        <textarea rows="1" class="form-control" id="ae_display_wf_time" disabled></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ae_display_wf_interval">Execution interval</label>
+                        <textarea rows="1" class="form-control" id="ae_display_wf_interval" disabled></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-danger" id="btn_ae_stopExecution"><span class="glyphicon glyphicon-stop" style="padding-right: 5px"></span> Stop execution</button>
+
+                </form>
+
+                <div class="alert alert-danger alert-dismissable fade in hidden" id="ae_stop_noselection">
+                    <button type="button" class="close" id="btn_ae_stop_noselection">&times;</button>
+                    <strong>Warning!</strong> You have not yet selected any workflow!
+                </div>
+
+            </div>
+
+
+            <div class="tab-pane" id="ae-tab-add">
+
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h4>Available workflows</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-default btn-block" id="btn_ae_refreshAvailable"><span class="glyphicon glyphicon-refresh" style="padding-right: 5px"></span> Refresh</button>
+                    </div>
+                </div>
+
+                <table class="table table-hover" id="ae_add_table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Creation date</th>
+                        <th>Creator</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <!-- will be filled with server response -->
+                    </tbody>
+                </table>
+
+                <div class="alert alert-info" id="ae_selection_loading">
+                    Please wait ... loading information from the server.
+                </div>
+
+                <div class="alert alert-warning hidden" id="ae_selection_empty">
+                    No stored workflows found on the server.
+                </div>
+
+                <form name="ae_add_form" role="form">
+
+                    <div class="form-group">
+                        <label for="ae_add_wf_name">Workflow name</label>
+                        <textarea rows="1" class="form-control" id="ae_add_wf_name" disabled></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ae_add_wf_description">Workflow description</label>
+                        <textarea rows="4" class="form-control" id="ae_add_wf_description" disabled></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="ae_add_wf_time">Time of first execution</label>
+                        <textarea rows="1" class="form-control" id="ae_add_wf_time"><%= now %></textarea>
+                    </div>
+
+                    <!--
+                    <div class="form-group">
+                        <label for="ae_add_wf_interval">Execution interval</label>
+                        <textarea rows="1" class="form-control" id="ae_add_wf_interval" placeholder="1 days"></textarea>
+                    </div>
+                    -->
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ae_add_wf_interval_selection">Execution interval</label>
+                                <input type="number" min="1" class="form-control" id="ae_add_wf_interval_selection" value="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ae_add_wf_interval_unit">Unit</label>
+                                <select class="form-control" id="ae_add_wf_interval">
+                                    <option>minutes</option>
+                                    <option>hours</option>
+                                    <option>days</option>
+                                    <option>weeks</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="ae_add_test"> Test workflow execution results
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-success" id="btn_ae_startExecution"><span class="glyphicon glyphicon-play" style="padding-right: 5px"></span> Start execution</button>
+
+                </form>
+
+                <div class="alert alert-danger hidden" id="ae_start_noselection">
+                    <button type="button" class="close" id="btn_ae_start_noselection">&times;</button>
+                    <strong>Warning!</strong> You have not yet selected any workflow!
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+
+    <!-- Response Dialog -->
+    <!-- TODO -->
+    <div id="responseDialog"></div>
+
+
+	<% include includes/footer %>
+
+
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="./lib/jquery-1.10.2.min.js"></script>
+    <script src="./lib/jquery.tablesorter.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./js/administration-ae.js"></script>
+	<script src="./lib/spin.min.js"></script>
+	<script src="./lib/jquery.spin.js"></script>
+	<script>
+		$(document).ready(startAdministration());
+	</script>
+</body>
+</html>

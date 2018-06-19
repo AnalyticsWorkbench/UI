@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Analytics Workbench</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap theme -->
+        <!-- <link href="./css/bootstrap-theme.min.css" rel="stylesheet"> -->
+
+        <!-- Custom css -->
+        <link href="./css/bootstrap-login.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Analytics Workbench</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="login-form">
+
+            <div class="container">
+
+                <form class="form-signin" role="form" action="/login" method="post">
+                    <h2 class="form-signin-heading">Please sign in</h2>
+                    <input type="text" name="username" class="form-control" placeholder="Username or email address" required autofocus>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <input type="hidden" name="destination" value=<%= destination %> />
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+
+                <% if (guest_account) { %>
+                <form class="form-signin" role="form" action="/login" method="post">
+                    <input type="hidden" name="username" value="guest" />
+                    <input type="hidden" name="password" value="guest" />
+                    <input type="hidden" name="destination" value=<%= destination %> />
+                    <button class="btn btn-lg btn-success btn-block" type="submit">Sign in as guest</button>
+                </form>
+                <% } %>
+
+            </div>
+        </div>
+
+        <% if (failure) { %>
+        <div class="container">
+            <div class="alert alert-danger alert-signin">
+                <strong>Wrong username or password!</strong><br />Please try again.
+            </div>
+        </div>
+        <% } %>
+
+        <% if (guest_account) { %>
+        <div class="container">
+            <div class="panel panel-info panel-signin">
+                <div class="panel-heading">
+                    <div class="panel-titel">Demo Login</div>
+                </div>
+                <div class="panel-body">
+                    <p>This demo version of the workbench can be accessed as user <em>&quot;guest&quot;</em> using the <em>Sign in as guest</em> button.</p>
+                    <p>For more information please go back to the <a href='/'>overview page</a>.</p>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">&#169; 2014 - <a href="http://www.collide.info/" target="_blank">Collide Research Group</a> -
+                    <a href="https://www.uni-due.de/" target="_blank">University of Duisburg-Essen</a> -
+                    <a href="https://www.uni-due.de/de/impressum.shtml" target="_blank">Disclaimer</a></p>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./lib/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+
+    </body>
+</html>

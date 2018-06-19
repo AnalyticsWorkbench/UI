@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<% include includes/head %>
+
+<body>
+
+<% include includes/navbar %>
+
+<% include includes/jumbotron %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>The Classic UI</h2>
+            <!-- <p>Screenshot</p> -->
+            <p>The classic UI has been designed to be used on desktop computers. It combines a large
+            workspace for designing analysis workflows with an overview of available analysis features, which can
+            be added to the workspace by drag and drop to workflow, on the left hand side, information about results
+            created in the current session on the right hand side, and a menu of available actions on top.</p>
+            <a class="btn btn-primary" role="button" href="./workbench">Open Classic UI &raquo;</a>
+        </div>
+        <div class="col-md-6">
+            <h2>The Mobile UI</h2>
+            <!-- <p>Screenshot</p> -->
+            <p>The mobile UI has been designed to be used on touch devices. It offers the same functionality as
+            the classic UI, but is focused on touch interaction and also on smaller screen sizes. As a result most
+            of the space is occupied by the workspace. The available analysis features, the overview of created results,
+            and the action menu are initially hidden and can be shown on demand.</p>
+            <a class="btn btn-primary" role="button" href="./mobile">Open Mobile UI &raquo;</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>The Analytics Workbench</h2>
+    <p>The <em>Analytics Workench</em> is a tool for performing different kinds of analyses. It combines a
+    web-based frontend for designing analysis workflows with server-side computation of the designed
+    analysis processes. The workflows are represented using a visual language.</p>
+    <p>The workbench was designed as an extensible analysis framework. Extensibility includes both the possibility
+    to connect different frontends to the computational backend as well as the possibility to extend the available
+    analysis features. As the workbench is still in development, new analysis features are added regularly.</p>
+    <p>The version offered here is a demo version, which is restricted to a selection of analysis features from
+    the field of Social Network Analysis. Please be aware that the version offered here is not intended for productive
+    use. Thus created analysis workflows and results may be deleted from time to time without further warning!</p>
+    <a class="btn btn-primary" role="button" href="./about">More information &raquo;</a>
+</div>
+
+<% include includes/footer %>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./lib/jquery-1.10.2.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

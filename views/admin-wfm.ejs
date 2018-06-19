@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+
+<% include includes/head %>
+
+<body>
+
+<% include includes/navbar %>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <!-- title -->
+                <h3>Workflow Manager Options</h3>
+
+                <hr class="divider" />
+                <!-- agentcheck -->
+                <h4>Agent Check</h4>
+
+                <form name="wfm_agentCheck">
+
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="wfm_input_ifAgentCheck">
+                            Agent Check enabled
+                        </label>
+                    </div>
+                </form>
+
+                <!-- agentcheck params -->
+                <div id="wfm_agentCheckParams">
+                    <div id="wfm_changeAgentCheckRate" class="form-group">
+                        <label for="wfm_input_changeAgentCheckRate">Agent
+                            check rate (in seconds):</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="wfm_input_changeAgentCheckRate"
+                                placeholder="enter a number">
+                            <span class="input-group-btn">
+                                <button id="wfm_btn_changeAgentCheckRate" type="button"
+                                    class="btn btn-primary">Change</button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="wfm_changeMinRepititionInterval" class="form-group">
+                        <label for="wfm_input_changeMinRepititionInterval">Minimal
+                            time between two executions (in seconds):</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control"
+                                id="wfm_input_changeMinRepititionInterval"
+                                placeholder="enter a number">
+                            <span class="input-group-btn">
+                                <button id="wfm_btn_changeMinRepititionInterval" type="button"
+                                    class="btn btn-primary">Change</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider" />
+
+                <!-- logging -->
+                <h4>Logging</h4>
+
+                <form name="wfm_logging" role="form">
+
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="wfm_input_ifLogfile">
+                            Logfile enabled
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label> <input type="checkbox" id="wfm_input_ifMail">
+                            E-mail notification enabled
+                        </label>
+                    </div>
+
+                </form>
+
+                <!-- Email options -->
+                <div id="mailOpts">
+
+                    <hr class="divider" />
+
+                    <h4>Email</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <h5>mail options</h5>
+
+                            <hr class="divider" />
+
+                            <form name="wfm_mailOptions" role="form">
+
+                                <div class="form-group">
+                                    <label for="wfm_input_mailSender">Sender:</label> <input
+                                        type="email" class="form-control" id="wfm_input_mailSender">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_mailReceivers">Receivers (1, 2,
+                                        ...):</label>
+                                    <textarea class="form-control" id="wfm_input_mailReceivers"
+                                        rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_mailSubject">Subject:</label> <input
+                                        type="text" class="form-control" id="wfm_input_mailSubject">
+                                </div>
+
+                                <hr class="divider" />
+
+                                <button id="wfm_btn_saveMailOpts" type="button"
+                                    class="btn btn-primary btn-block">Change</button>
+
+                                <hr class="divider" />
+
+                                <button id="wfm_btn_sendTestMail" type="button"
+                                        class="btn btn-success btn-block">Send test mail</button>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <h5>smtp options</h5>
+
+                            <hr class="divider" />
+
+                            <form name="wfm_smtpOptions" class="">
+
+                                <div class="form-group">
+                                    <label for="wfm_input_smtpService">Service:</label> <input
+                                        type="text" class="form-control" id="wfm_input_smtpService">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_smtpHost">Host:</label> <input type="text"
+                                        class="form-control" id="wfm_input_smtpHost">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_smtpPort">Port:</label> <input
+                                        type="number" class="form-control" id="wfm_input_smtpPort">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_smtpUserName">Username:</label> <input
+                                        type="text" class="form-control" id="wfm_input_smtpUserName">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="wfm_input_smtpUserPassword">Password:</label> <input
+                                        type="password" class="form-control"
+                                        id="wfm_input_smtpUserPassword">
+                                </div>
+                                <hr class="divider" />
+
+                                <button id="wfm_btn_saveSmtpOpts" type="button"
+                                    class="btn btn-primary btn-block">Change</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- end mail options (row) -->
+                </div>
+                <!-- end mail opts -->
+
+            </div>
+            <!-- end col wfm  -->
+
+            <div class="col-md-6">
+
+                <h3>Workflow Manager Execution Interface</h3>
+
+                <hr class="divider" />
+
+                <h4>Webservice</h4>
+
+                <div>
+
+                    <div>
+                        <p>
+                            Status:&nbsp; <span id="wfm_webserviceOn"
+                                class="label label-success">On</span> <span
+                                id="wfm_webserviceOff" class="label label-danger">Off</span>
+                            &nbsp;&nbsp;&larr;&nbsp;click to switch
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wfm_input_webservicePortnumber">listening on port:</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="wfm_input_webservicePortnumber">
+                            <span class="input-group-btn">
+                                <button id="wfm_btn_changeWebservicePortnumber" type="button" class="btn btn-primary">Change</button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+    <!-- ############################################################### -->
+
+    <!-- Response Dialog -->
+    <!-- TODO -->
+    <div id="responseDialog"></div>
+
+
+	<% include includes/footer %>
+
+
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="./lib/jquery-1.10.2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./js/administration-wfm.js"></script>
+	<script src="./lib/spin.min.js"></script>
+	<script src="./lib/jquery.spin.js"></script>
+	<script>
+		$(document).ready(startAdministration());
+	</script>
+</body>
+</html>
