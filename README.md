@@ -2,9 +2,11 @@
 
 For running the Workbench, some additional folders and files are necessary:
 in UI folder:
+git
 ```
 mkdir result
 mkdir security
+```
 
 "results" - the folder which is used to server analysis results
 
@@ -24,11 +26,11 @@ Main file is workbench.js
   on mac OS if you got error on node install becasue of version No longer building under node 10.0.0 / macOS 10.13.4
   try this commmands:
 
-  ´´´
+  ```
   brew install node@8
   brew link --overwrite --force node@8
   npm install noble
-  ´´´
+  ```
 
   - [not always] second step: run "node usercreator.js"
 
@@ -38,15 +40,15 @@ Main file is workbench.js
   ´´´
   - then run "node workbench.js":
 
-   ´´´
+   ```
    node workbench.js
 
-   ´´´
+```
 
   to create user having psql DB is neccessary:
-  ´´´
+```
   createdb demo
-  ´´´
+  ```
   check here for more info: https://www.postgresql.org/docs/8.0/static/app-createdb.html
 
 
