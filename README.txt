@@ -19,7 +19,6 @@ You have to create users by running "usercreator.js" (whenever you start with a 
 
 Main file is workbench.js
 
-
   - first install necessary module by "npm install" in this directory
   
   on mac OS if you got error on node install becasue of version No longer building under node 10.0.0 / macOS 10.13.4 
@@ -32,8 +31,17 @@ Main file is workbench.js
   ´´´
   
   - [not always] second step: run "node usercreator.js"
-  - then run "node workbench.js"
   
+  run the psql before runing workbench you can do it mannualy by command :
+  ´´´
+  postgres -D /usr/local/var/postgres
+  ´´´
+  - then run "node workbench.js":
+  
+   ´´´
+   node workbench.js
+   
+   ´´´
   
   to create user having psql DB is neccessary:
   ´´´
