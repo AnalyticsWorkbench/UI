@@ -31,12 +31,16 @@ Main file is workbench.js
   brew link --overwrite --force node@8
   npm install noble
   ```
-
+  better to run this command with your to have better console report.
   - [not always] second step: run "node usercreator.js"
   ```
   node usercreator.js
   ```
-
+  - [not always] second step: run "node postgresInitializer.js"
+  ```
+  node postgresInitializer.js
+  ```
+   
   run the psql before runing workbench you can do it mannualy by command :
   
   
@@ -44,7 +48,7 @@ Main file is workbench.js
    postgres -D /usr/local/var/postgres
    ```
    
-   to create user having psql DB is neccessary:
+   [not always] to create user having psql DB is neccessary:
    ```
    createdb workbench
    ```
