@@ -29,7 +29,6 @@ export default createClass({
             className,
             ...props
         } = this.props;
-
         const { label } = category;
         const { color } = colorsByFilterCategory[label];
 
