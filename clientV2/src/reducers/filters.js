@@ -1,6 +1,6 @@
 import reduce from 'lodash/collection/reduce';
-import createFilterIdFromName from 'utils/createFilterIdFromName';
-import directUploaderConfiguration from 'utils/directUploaderConfiguration';
+import createFilterIdFromName from 'clientV2/src/utils/createFilterIdFromName';
+import directUploaderConfiguration from 'clientV2/src/utils/directUploaderConfiguration.js';
 
 const initialState = {
 	byId: {},

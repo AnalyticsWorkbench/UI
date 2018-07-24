@@ -1,25 +1,21 @@
 import map from 'lodash/collection/map';
 import cn from 'classnames';
 import React, { PropTypes, createClass } from 'react';
-
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
-import Icon from 'components/ui/Icon';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
+import Icon from 'clientV2/src/components/ui/Icon/index.js';
 import Category from './Category';
-
 import enhance from './enhance';
 import styles from './styles.scss';
 
 const Creator = createClass({
 
     displayName: 'Creator',
-
     propTypes: {
         categories: PropTypes.array.isRequired,
         filtersByCategory: PropTypes.object.isRequired,
         workflowActions: PropTypes.object.isRequired,
         className: PropTypes.string
     },
-
     shouldComponentUpdate: shouldComponentUpdate,
 
     render() {

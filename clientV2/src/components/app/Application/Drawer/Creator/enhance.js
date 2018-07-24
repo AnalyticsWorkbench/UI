@@ -5,8 +5,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 
-import createFilterIdFromName from 'utils/createFilterIdFromName';
-import * as workflowActionsRaw from 'actions/workflow';
+import createFilterIdFromName from 'clientV2/src/utils/createFilterIdFromName.js';
+import * as workflowActionsRaw from 'clientV2/src/actions/workflow.js';
 
 const ignoreFilters = ['Meta Analysis'];
 

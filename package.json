@@ -31,6 +31,7 @@
     "pg-native": "^3.0.0",
     "pg-promise": "^4.3.7",
     "pg-pubsub": "*",
+    "react-json-inspector": "^7.1.1",
     "readline": "0.0.3",
     "session.socket.io": "*",
     "socket.io": "*",

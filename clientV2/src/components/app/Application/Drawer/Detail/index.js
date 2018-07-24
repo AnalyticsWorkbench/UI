@@ -2,9 +2,9 @@ import cn from 'classnames';
 import React, { PropTypes, createClass } from 'react';
 
 import { colorsByFilterCategory } from 'config';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
-import FilterForm from 'components/forms/FilterForm';
-import Tabs from 'components/ui/Tabs';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
+import FilterForm from 'clientV2/src/components/forms/FilterForm';
+import Tabs from 'clientV2/src/components/ui/Tabs';
 
 import MetaInspector from './MetaInspector';
 import enhance from './enhance';

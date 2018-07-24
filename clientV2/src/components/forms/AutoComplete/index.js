@@ -1,6 +1,6 @@
 import React from 'react';
 import { connectInput } from 'react-formalize';
-import AutoCompleteBase from 'components/ui/AutoComplete';
+import AutoCompleteBase from 'clientV2/src/components/ui/AutoComplete/index.js';
 
 const AutoComplete = props => <AutoCompleteBase {...props}/>;
 

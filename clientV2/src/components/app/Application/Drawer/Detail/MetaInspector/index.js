@@ -2,16 +2,15 @@ import cn from 'classnames';
 import map from 'lodash/collection/map';
 import React, { PropTypes, createClass } from 'react';
 
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 
-import JsonInspector from 'components/ui/JsonInspector';
+import JsonInspector from 'clientV2/src/components/ui/JsonInspector/index.js';
 
 import styles from './styles.scss';
 
 export default createClass({
 
     displayName: 'MetaInspector',
-
     propTypes: {
         meta: PropTypes.object,
         metaInput: PropTypes.object,
@@ -46,7 +45,7 @@ export default createClass({
                         </div>
                         <JsonInspector
                             className={styles.inspector}
-                            search={false}
+                            search={data} // FBA // master : false
                             isExpanded={this.isExpanded}
                             data={meta}/>
                     </div>
@@ -60,9 +59,10 @@ export default createClass({
                                 </div>
                                 <JsonInspector
                                     className={styles.inspector}
-                                    search={false}
+                                    search={data} // FBA // master : false
                                     isExpanded={this.isExpanded}
-                                    data={data}/>
+                                    data={data} // data={data} can be also meta for metadata
+                                />
                             </div>
                         );
                     })

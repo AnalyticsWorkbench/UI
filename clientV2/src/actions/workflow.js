@@ -1,11 +1,11 @@
 import map from 'lodash/collection/map';
 import every from 'lodash/collection/every';
-import createCollectMetaDataWorkflow from 'utils/createCollectMetaDataWorkflow';
-import createExecuteData from 'utils/createExecuteData';
-import createUploadData from 'utils/createUploadData';
-import createSaveWiringData from 'utils/createSaveWiringData';
-import getFieldValidationMessage from 'utils/getFieldValidationMessage';
-import validateWorkflow from 'utils/validateWorkflow';
+import createCollectMetaDataWorkflow from 'clientV2/src/utils/createCollectMetaDataWorkflow.js';
+import createExecuteData from 'clientV2/src/utils/createExecuteData';
+import createUploadData from 'clientV2/src/utils/createUploadData';
+import createSaveWiringData from 'clientV2/src/utils/createSaveWiringData';
+import getFieldValidationMessage from 'clientV2/src/utils/getFieldValidationMessage';
+import validateWorkflow from 'clientV2/src/utils/validateWorkflow';
 
 export function load(wiring) {
     return {

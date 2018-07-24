@@ -1,12 +1,12 @@
 import map from 'lodash/collection/map';
 import cn from 'classnames';
-import React, { PropTypes, createClass } from 'react';
+import React, {createClass, PropTypes} from 'react';
 
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
-import Icon from 'components/ui/Icon';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate.js';
+import Icon from 'clientV2/src/components/ui/Icon/index.js';
 
 import styles from './styles.scss';
-import { colorsByFilterCategory } from 'config';
+import {colorsByFilterCategory} from 'clientV2/src/config.js';
 
 export default createClass({
 
@@ -29,8 +29,8 @@ export default createClass({
             className,
             ...props
         } = this.props;
-        const { label } = category;
-        const { color } = colorsByFilterCategory[label];
+        const {label} = category;
+        const {color} = colorsByFilterCategory[label];
 
         return (
             <div
@@ -41,8 +41,8 @@ export default createClass({
                 </div>
                 <div className={styles.filters}>
                     {map(filters, filter => {
-                        const { id, name, container } = filter;
-                        const { legend } = container;
+                        const {id, name, container} = filter;
+                        const {legend} = container;
                         const handleClick = () => add(filter);
                         return (
                             <div
@@ -50,7 +50,7 @@ export default createClass({
                                 className={styles.filter}
                                 onClick={handleClick}>
                                 <div
-                                    style={{ color: color }}
+                                    style={{color: color}}
                                     className={styles.filterIcon}>
                                     <Icon icon="circle" padded/>
                                 </div>

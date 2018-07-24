@@ -1,7 +1,7 @@
-import getInputModules from 'utils/getInputModules';
-import { unsetLoaded } from 'actions/workflow';
+import getInputModules from 'clientV2/src/utils/getInputModules';
+import { unsetLoaded } from 'clientV2/src/actions/workflow';
+import { metaExecute } from 'clientV2/src/actions/workflow';
 
-import { metaExecute } from 'actions/workflow';
 export default createStore => (reducer, initialState) => {
 	const store = createStore(reducer, initialState);
     let inputModulesValues = [];

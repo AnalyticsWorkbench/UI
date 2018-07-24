@@ -1,4 +1,4 @@
-import DateRange from 'components/ui/DateRange';
+import DateRange from 'clientV2/src/components/ui/DateRange';
 import { connectInput } from 'react-formalize';
 
 const serialize = value => value;

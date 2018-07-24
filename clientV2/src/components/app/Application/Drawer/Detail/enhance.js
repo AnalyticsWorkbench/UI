@@ -4,10 +4,10 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 
-import isInputModule from 'utils/isInputModule';
-import isOutputModule from 'utils/isOutputModule';
-import getFieldValidationMessage from 'utils/getFieldValidationMessage';
-import getMetaData from 'utils/getMetaData';
+import isInputModule from 'clientV2/src/utils/isInputModule';
+import isOutputModule from 'clientV2/src/utils/isOutputModule';
+import getFieldValidationMessage from 'clientV2/src/utils/getFieldValidationMessage';
+import getMetaData from 'clientV2/src/utils/getMetaData.js';
 import * as workflowActionsRaw from 'actions/workflow';
 
 function getForm(module, filter, meta) {

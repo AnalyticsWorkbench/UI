@@ -8,7 +8,6 @@ import 'styles/scaffholding/index.scss';
 export default createClass({
 
     displayName: 'Root',
-
     propTypes: {
 		reducers: PropTypes.object.isRequired
 	},

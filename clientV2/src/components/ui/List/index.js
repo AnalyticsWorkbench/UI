@@ -1,7 +1,7 @@
 import map from 'lodash/collection/map';
 import React, { createClass, PropTypes, cloneElement } from 'react';
 import cn from 'classnames';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 
 function defaultGetKey(item, i) {
 	return item.id || item.cid || i;

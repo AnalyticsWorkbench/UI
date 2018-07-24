@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import map from 'lodash/collection/map';
 import React, { createClass, PropTypes } from 'react';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 
 import styles from './styles.scss';
 

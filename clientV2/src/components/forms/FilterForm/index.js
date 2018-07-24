@@ -2,7 +2,7 @@ import reduce from 'lodash/collection/reduce';
 import sortBy from 'lodash/collection/sortBy';
 import map from 'lodash/collection/map';
 import React, { PropTypes, createClass } from 'react';
-import Form from 'components/forms/Form';
+import Form from 'clientV2/src/components/forms/Form/index';
 import FormGroup from 'components/forms/FormGroup';
 import Text from 'components/forms/Text';
 import File from 'components/forms/File';

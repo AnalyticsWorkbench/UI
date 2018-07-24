@@ -3,12 +3,11 @@ import cn from 'classnames';
 import filter from 'lodash/collection/filter';
 import map from 'lodash/collection/map';
 import React, { PropTypes, createClass } from 'react';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 
 import styles from './styles.scss';
 
 export default createClass({
-
     displayName: 'Module',
 
     propTypes: {

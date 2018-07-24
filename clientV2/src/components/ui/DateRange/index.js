@@ -1,14 +1,13 @@
 import cn from 'classnames';
 import React, { PropTypes, createClass } from 'react';
-import DayPicker from 'components/ui/DayPicker';
-import Button from 'components/ui/Button';
+import DayPicker from 'clientV2/src/components/ui/DayPicker/index.js';
+import Button from 'clientV2/src/components/ui/Button/index.js';
 
 import styles from './styles.scss';
 
 export default createClass({
 
     displayName: 'DateRange',
-
     propTypes: {
         min: PropTypes.string,
         max: PropTypes.string,

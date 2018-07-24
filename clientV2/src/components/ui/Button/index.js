@@ -1,52 +1,30 @@
-import React, { PropTypes, createClass } from 'react';
+import React, { PropTypes } from 'react';
 import cn from 'classnames';
-
-import Icon from 'components/ui/Icon';
+import Icon from 'clientV2/src/components/ui/Icon';
 import styles from './styles.scss';
 
-export default createClass({
-
-    displayName: 'Button',
-
-    propTypes: {
-        children: PropTypes.node,
-        appearance: PropTypes.oneOf([
-            'default', 'highlight'
-        ]),
-        loading: PropTypes.bool,
-        icon: PropTypes.string,
-        to: PropTypes.string,
-        href: PropTypes.string,
-        hideLabelXs: PropTypes.bool
-    },
-
-    getDefaultProps() {
-        return {
-            appearance: 'default'
-        };
-    },
+class Button extends React.Component {
 
     renderInner() {
         const { appearance, loading, icon, children, ...props } = this.props;
         return (
             <span className={styles.inner}>
                 {loading &&
-                    <Icon
-                        spin
-                        icon="circle-o-notch"
-                        className={styles.spinner}
-                        gradientClassName={styles.spinnerGradient}/>
+                <Icon
+                    spin
+                    icon="circle-o-notch"
+                    className={styles.spinner}
+                    gradientClassName={styles.spinnerGradient}/>
                 }
                 {icon && !loading &&
-                    <Icon icon={icon} className={styles.icon}/>
+                <Icon icon={icon} className={styles.icon}/>
                 }
                 {children &&
-                    <span className={styles.label}>{children}</span>
+                <span className={styles.label}>{children}</span>
                 }
             </span>
         );
-    },
-
+    }
     render() {
         const {
             to,
@@ -77,4 +55,23 @@ export default createClass({
             </button>
         );
     }
-});
+}
+
+Button.propTypes = {
+    children: PropTypes.node,
+    appearance: PropTypes.oneOf(['default', 'highlight']),
+    loading: PropTypes.bool,
+    icon: PropTypes.string,
+    to: PropTypes.string,
+    href: PropTypes.string,
+    hideLabelXs: PropTypes.bool,
+
+    getDefaultProps() {
+        return {
+            appearance: 'default'
+        }
+    }
+};
+
+
+export default Button;

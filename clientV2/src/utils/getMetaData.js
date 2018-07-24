@@ -11,7 +11,7 @@ function getIncommingModulesByModuleId(wiresById) {
 	}, {});
 }
 
-export default function getMetaData(moduleId, modulesById, wiresById, filtersById, metaDataByModuleId) {
+function getMetaData(moduleId, modulesById, wiresById, filtersById, metaDataByModuleId) {
 	const incommingModulesByModuleId = getIncommingModulesByModuleId(wiresById);
 
 	function reduceIncommingModules(incommingModules, walkFn) {
@@ -46,3 +46,4 @@ export default function getMetaData(moduleId, modulesById, wiresById, filtersByI
 	const incommingModules = getIncommingModulesByModules(moduleId);
 	return reduceIncommingModules(incommingModules, walk);
 }
+export default getMetaData()

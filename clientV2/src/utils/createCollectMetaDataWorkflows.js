@@ -2,6 +2,8 @@ import filter from 'lodash/collection/filter';
 import map from 'lodash/collection/map';
 
 import createCollectMetaDataWorkflow from './createCollectMetaDataWorkflow';
+
+
 export default function createCollectMetaDataWorflows(workflow, filtersById) {
     const { modulesById } = workflow;
 

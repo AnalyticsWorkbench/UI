@@ -4,8 +4,7 @@ import cn from 'classnames';
 import React, { PropTypes, createClass } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Scrollbars } from 'react-custom-scrollbars';
-
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 import Module from './Module';
 import Terminal from './Terminal';
 import styles from './styles.scss';

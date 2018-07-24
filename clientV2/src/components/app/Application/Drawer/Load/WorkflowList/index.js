@@ -2,10 +2,10 @@ import map from 'lodash/collection/map';
 import cn from 'classnames';
 import React, { PropTypes, createClass } from 'react';
 
-import parseCustomDate from 'utils/parseCustomDate';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
-import Icon from 'components/ui/Icon';
-import Button from 'components/ui/Button';
+import parseCustomDate from 'clientV2/src/utils/parseCustomDate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
+import Icon from 'clientV2/src/components/ui/Icon/index.js';
+import Button from 'clientV2/src/components/ui/Button/index.js';
 
 import styles from './styles.scss';
 

@@ -1,6 +1,6 @@
 import React, { createClass, PropTypes } from 'react';
 import cn from 'classnames';
-import shouldComponentUpdate from 'utils/shouldComponentUpdate';
+import shouldComponentUpdate from 'clientV2/src/utils/shouldComponentUpdate';
 import styles from './styles.scss';
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {

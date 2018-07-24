@@ -2,7 +2,6 @@ import shallowEqual from './shallowEqual';
 
 function getKeyDiff(obj1, obj2) {
 	const keys = {};
-
 	for (const key in obj1) {
 		if (obj1[key] !== obj2[key]) {
 			keys[key] = {prev: obj1[key], next: obj2[key]};
@@ -11,7 +10,7 @@ function getKeyDiff(obj1, obj2) {
 	return keys;
 }
 
-export default function shouldComponentUpdate(nextProps, nextState) {
+const shouldComponentUpdate = (nextProps, nextState) => {
 	const propsEqual = shallowEqual(this.props, nextProps);
 	const stateEqual = shallowEqual(this.state, nextState);
 
@@ -31,4 +30,5 @@ export default function shouldComponentUpdate(nextProps, nextState) {
 	}
 
 	return shouldUpdate;
-}
+};
+export default shouldComponentUpdate

@@ -1,7 +1,7 @@
 import clone from 'lodash/lang/clone';
 import omit from 'lodash/object/omit';
 import reduce from 'lodash/collection/reduce';
-import createFilterIdFromName from 'utils/createFilterIdFromName';
+import createFilterIdFromName from 'clientV2/src/utils/createFilterIdFromName';
 
 const initialState = {
     status: undefined,

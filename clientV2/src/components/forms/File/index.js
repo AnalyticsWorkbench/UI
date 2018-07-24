@@ -1,4 +1,4 @@
-import File from 'components/ui/File';
+import File from 'clientV2/src/components/ui/File';
 import { connectInput } from 'react-formalize';
 
 const serialize = event => {
