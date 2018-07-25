@@ -31,36 +31,90 @@ Main file is workbench.js
   brew link --overwrite --force node@8
   npm install noble
   ```
-  better to run this command with your to have better console report.
+
   - [not always] second step: run "node usercreator.js"
-  ```
-  node usercreator.js
-  ```
+ ```
+ node usercreator.js
+```
   - [not always] second step: run "node postgresInitializer.js"
-  ```
-  node postgresInitializer.js
-  ```
-   
-  run the psql before runing workbench you can do it mannualy by command :
-  
-  
-   ```
+```
+ node postgresInitializer.js
+```
+run the psql before runing workbench you can do it mannualy by command :
+```
    postgres -D /usr/local/var/postgres
-   ```
+```
    
-   [not always] to create user having psql DB is neccessary:
-   ```
-   createdb workbench
-   ```
+   to create user having psql DB is neccessary:
+```
+  createdb workbench
+```
+   To login into the workbench with (User : admin, Pass: admin-pw) runnig Start redis-server is neccessrary.
+   Please clone this repository and follow Readme: 
+   
+   
+   
+   short commands in for running redis-server :
+   
+```
+   % make
+   % make test 
+   % cd src 
+   % ./redis-server
+```
+   
    
    to run the local server on 3081: 
    
-   ```
+```
    node workbench.js
-   ```
+```
     
   
   check here for more info: https://www.postgresql.org/docs/8.0/static/app-createdb.html
 
 
   See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
+
+## Debuging ClientV2
+
+
+#### npm install
+
+  if you face problem check on this wiki you can find your solution 
+
+  some common bug in npm install 
+
+###### error :
+  npm ERR! Unexpected end of JSON input while parsing near '...07dae64be","tarball":'
+
+###### solution is clear your npm cash.  
+```
+  npm cache clean --force 
+```
+   after installing npm if you have potentioal package lost try :
+```
+  npm audit
+```
+   and install missed dependencies.
+
+#### npm run compile
+
+###### error :
+   sh: tasks/compile: Permission denied
+   npm ERR! code ELIFECYCLE
+   npm ERR! errno 126
+ 
+###### solution
+
+   go to the clientV2 in public_html and delete app.js and app.css 
+
+   open task folder
+     ./UI/clientV2/tasks 
+
+   check the line that begin with
+    ```
+    UV_THREADPOOL_SIZE=100 NODE_ENV=development NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
+    ```
+   paste and execute this command into terminal to compile react   part into js in clientV2 in public_html folder.
+
