@@ -1,4 +1,4 @@
-# Analytics Workbench Setup UI with netbeans using postgresSQL
+# Analytics Workbench Setup UI with NetBeans using postgresSQL
 
 For running the Workbench, some additional folders and files are necessary:
 in UI folder:
@@ -21,7 +21,7 @@ You have to create users by running "usercreator.js" (whenever you start with a 
 
 Main file is workbench.js
 
-  - first install necessary module by "npm install" in this directory
+  - first, install necessary module by "npm install" in this directory
 
   on mac OS if you got error on node install becasue of version No longer building under node 10.0.0 / macOS 10.13.4
   try this commmands:
@@ -40,19 +40,17 @@ Main file is workbench.js
 ```
  node postgresInitializer.js
 ```
-run the psql before runing workbench you can do it mannualy by command :
+run the psql before runing workbench you can do it manually by the command line :
 ```
    postgres -D /usr/local/var/postgres
 ```
    
-   to create user having psql DB is neccessary:
+   to create user having psql DB is necessary:
 ```
-  createdb workbench
+  created workbench
 ```
-   To login into the workbench with (User : admin, Pass: admin-pw) runnig Start redis-server is neccessrary.
+   To login into the workbench with (User: admin, Pass: admin-pw) runnig Start redis-server is neccessrary.
    Please clone this repository and follow Readme: 
-   
-   
    
    short commands in for running redis-server :
    
@@ -72,7 +70,7 @@ run the psql before runing workbench you can do it mannualy by command :
 
   See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
 
-## Debuging ClientV2
+## Debugging ClientV2
 
 
 #### npm install
@@ -88,7 +86,7 @@ run the psql before runing workbench you can do it mannualy by command :
 ```
   npm cache clean --force 
 ```
-   after installing npm if you have potentioal package lost try :
+   after installing npm if you have potential package lost try :
 ```
   npm audit
 ```
@@ -113,8 +111,8 @@ run the psql before runing workbench you can do it mannualy by command :
     UV_THREADPOOL_SIZE=100 NODE_ENV=development NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
     ```
     
- paste and execute this command into terminal to compile react   part into js in clientV2 in public_html folder.
- or go to the stask folder wich contain script files and do:
+ paste and execute this command into terminal to compile react part into js in clientV2 in public_html folder.
+ or go to the task folder which contains script files and do:
     
  You can open the terminal (press Ctrl + Alt + T) and cd to the target directory:
 
@@ -124,7 +122,7 @@ To give the file "the_file_name" execute permission (if the file-system allows y
 chmod +x the_file_name
 
 ```   
-example is here after you got permission and do ls you should see * on your script as permition granted by linux core
+an example is here after you got permission and do ls you should see * on your script as permission granted by Linux core
 
 ![screenshot 2018-07-26 15 17 41](https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png)
 
@@ -139,4 +137,3 @@ Removing node_modules and running npm install if not fix try this command.
  ```
  npm rebuild node-sass
  ```
-
