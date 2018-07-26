@@ -116,7 +116,16 @@ run the psql before runing workbench you can do it mannualy by command :
     ```
     UV_THREADPOOL_SIZE=100 NODE_ENV=development NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
     ```
-   paste and execute this command into terminal to compile react   part into js in clientV2 in public_html folder.
+    
+    paste and execute this command into terminal to compile react   part into js in clientV2 in public_html folder.
+    or go to the stask folder wich contain script files and do:
+    
+    You can open the terminal (press Ctrl + Alt + T) and cd to the target directory:
+
+cd /path/to/target
+To give the file "the_file_name" execute permission (if the file-system allows you with the RW rights):
+
+chmod +x the_file_name
    
 ###### error : 
 Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0.0)
