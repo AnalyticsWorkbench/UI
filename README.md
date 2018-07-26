@@ -124,6 +124,9 @@ To give the file "the_file_name" execute permission (if the file-system allows y
 chmod +x the_file_name
 
 ```   
+example is here after you got permission and do ls you should see * on your script as permition granted by linux core
+
+![screenshot 2018-07-26 15 17 41](https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png)
 
 ###### error : 
 Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0.0)
