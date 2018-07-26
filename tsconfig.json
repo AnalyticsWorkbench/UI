@@ -1,0 +1,134 @@
+{
+  "modules": [
+    {
+      "name": "Data Repository",
+      "value": {
+        "selected_file": "krackardt_high_tech_managers-bm.sgf"
+      },
+      "config": {
+        "position": [
+          27,
+          10
+        ],
+        "xtype": "WireIt.SISOBContainer"
+      }
+    },
+    {
+      "name": "Duplicator",
+      "value": {},
+      "config": {
+        "position": [
+          442,
+          41
+        ],
+        "xtype": "WireIt.SISOBContainer"
+      }
+    },
+    {
+      "name": "Similarity Filter",
+      "value": {
+        "method": "structural"
+      },
+      "config": {
+        "position": [
+          22,
+          183
+        ],
+        "xtype": "WireIt.SISOBContainer"
+      }
+    },
+    {
+      "name": "Blockmodel Analysis",
+      "value": {
+        "clustCount": "4",
+        "null": true,
+        "regular": false,
+        "complete": true,
+        "row dominant": false,
+        "column dominant": false,
+        "row regular": false,
+        "column regular": false,
+        "do not care": false
+      },
+      "config": {
+        "position": [
+          415,
+          246
+        ],
+        "xtype": "WireIt.SISOBContainer"
+      }
+    },
+    {
+      "name": "Dwyer Force Directed Graph",
+      "value": {},
+      "config": {
+        "position": [
+          450,
+          570
+        ],
+        "xtype": "WireIt.SISOBContainer"
+      }
+    }
+  ],
+  "wires": [
+    {
+      "xtype": "WireIt.BezierArrowWire",
+      "src": {
+        "moduleId": 0,
+        "terminal": "out_1"
+      },
+      "tgt": {
+        "moduleId": 1,
+        "terminal": "in_1"
+      }
+    },
+    {
+      "xtype": "WireIt.BezierArrowWire",
+      "src": {
+        "moduleId": 1,
+        "terminal": "out_1"
+      },
+      "tgt": {
+        "moduleId": 2,
+        "terminal": "in"
+      }
+    },
+    {
+      "xtype": "WireIt.BezierArrowWire",
+      "src": {
+        "moduleId": 2,
+        "terminal": "out_1"
+      },
+      "tgt": {
+        "moduleId": 3,
+        "terminal": "in_1"
+      }
+    },
+    {
+      "xtype": "WireIt.BezierArrowWire",
+      "src": {
+        "moduleId": 1,
+        "terminal": "out_2"
+      },
+      "tgt": {
+        "moduleId": 3,
+        "terminal": "in_2"
+      }
+    },
+    {
+      "xtype": "WireIt.BezierArrowWire",
+      "src": {
+        "moduleId": 3,
+        "terminal": "out_2"
+      },
+      "tgt": {
+        "moduleId": 4,
+        "terminal": "in_1"
+      }
+    }
+  ],
+  "properties": {
+    "name": "",
+    "description": ""
+  }
+}
