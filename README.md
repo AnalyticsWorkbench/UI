@@ -112,9 +112,21 @@ run the psql before runing workbench you can do it mannualy by command :
    open task folder
      ./UI/clientV2/tasks 
 
-   check the line that begin with
+   check the line that begin with (for mac users)
     ```
     UV_THREADPOOL_SIZE=100 NODE_ENV=development NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
     ```
    paste and execute this command into terminal to compile react   part into js in clientV2 in public_html folder.
+   
+###### error : 
+Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0.0)
+
+
+###### solution is reinstall the nodmodule and rebuid node-sass.
+
+Removing node_modules and running npm install if not fix try this command.
+
+ ```
+ npm rebuild node-sass
+ ```
 
