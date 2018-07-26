@@ -17,6 +17,17 @@ export interface Action {
   type: any;
 }
 
+/**
+ * An Action type which accepts any other properties.
+ * This is mainly for the use of the `Reducer` type.
+ * This is not part of `Action` itself to prevent users who are extending `Action.
+ * @private
+ */
+export interface AnyAction extends Action {
+  // Allows any extra properties to be defined in an action.
+  [extraProps: string]: any;
+}
+
 
 /* reducers */
 
@@ -43,7 +54,7 @@ export interface Action {
  *
  * @template S State object type.
  */
-export type Reducer<S> = <A extends Action>(state: S, action: A) => S;
+export type Reducer<S> = (state: S, action: AnyAction) => S;
 
 /**
  * Object whose values correspond to different reducer functions.
@@ -419,7 +430,8 @@ export function compose<A, B, C, T1, T2, T3, R>(
 ): Func3<T1, T2, T3, R>;
 
 /* rest */
-export function compose<A, B, C, R>(
-  f1: (b: C) => R, f2: (a: B) => C, f3: (a: A) => B,
-  ...funcs: Function[]
+export function compose<R>(
+  f1: (b: any) => R, ...funcs: Function[]
 ): (...args: any[]) => R;
+
+export function compose<R>(...funcs: Function[]): (...args: any[]) => R;
