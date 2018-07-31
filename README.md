@@ -146,3 +146,7 @@ Removing node_modules and running npm install if not fix try this command.
  ```
  npm rebuild node-sass
  ```
+ ###### error :
+ Error: ENOENT: no such file or directory, open '/Users/farbodaprin/Desktop/UIgit/UI/security/webworkbench.key'
+ check the security fokder if the webworkbench.key exist if the folder is empty do the instruction in commponent README.de to make the keys.
+ 
