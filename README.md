@@ -73,8 +73,11 @@ run the psql before runing workbench you can do it manually by the command line 
 ## Debugging ClientV2
 
 
-#### npm install
-
+#### 1 .npm install
+first comand before run the commands in tasks folder is :
+```
+   npm install
+```
   if you face problem check on this wiki you can find your solution 
 
   some common bug in npm install 
@@ -92,10 +95,13 @@ run the psql before runing workbench you can do it manually by the command line 
 ```
    and install missed dependencies.
 
-#### npm run compile
+#### 2. npm run compile
+```
+  npm run compile
+```
 
 ###### error :
-   sh: tasks/compile: Permission denied
+   
    npm ERR! code ELIFECYCLE
    npm ERR! errno 126
  
@@ -110,6 +116,7 @@ run the psql before runing workbench you can do it manually by the command line 
     ```
     UV_THREADPOOL_SIZE=100 NODE_ENV=development NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
     ```
+ in compile file uncomment above command for the mac system or
     
  paste and execute this command into terminal to compile react part into js in clientV2 in public_html folder.
  or go to the task folder which contains script files and do:
@@ -117,6 +124,8 @@ run the psql before runing workbench you can do it manually by the command line 
  You can open the terminal (press Ctrl + Alt + T) and cd to the target directory:
 
  cd /path/to/target
+ ###### error : 
+ sh: tasks/compile: Permission denied
 To give the file "the_file_name" execute permission (if the file-system allows you with the RW rights):
 ```
 chmod +x the_file_name
