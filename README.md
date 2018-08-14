@@ -150,3 +150,33 @@ Removing node_modules and running npm install if not fix try this command.
  Error: ENOENT: no such file or directory, open '/Users/farbodaprin/Desktop/UIgit/UI/security/webworkbench.key'
  check the security fokder if the webworkbench.key exist if the folder is empty do the instruction in commponent README.de to make the keys.
  
+  ###### error :
+  ```
+  npm run build
+   ```
+  
+  basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+          ^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/farbodaprin/Desktop/WorkbenchUi-7-AUG/UI/clientV2/node_modules/babel-register/lib/node.js:152:7)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the webworkbench-client-v2@1.0.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+ ###### solution is update webpack.
+ npm install --save-dev webpack
+ 
