@@ -6,13 +6,10 @@ in UI folder:
 ```
 $ cd UI 
 $ mkdir security
-
 ```
-
 ```
 $ cd UI/public_html
 $ mkdir results
-
 ```
 
 <img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="300" height="380">
