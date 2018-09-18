@@ -2,13 +2,25 @@
 
 For running the Workbench, some additional folders and files are necessary:
 in UI folder:
-git
+
 ```
-mkdir result
-mkdir security
+$ cd UI 
+$ mkdir security
+
 ```
 
-"results" - the folder which is used to server analysis results
+```
+$ cd UI/public_html
+$ mkdir results
+
+```
+
+<img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="300" height="380">
+
+
+"results" - the folder that is used to server analysis results.
+
+esp. MetaAnaysis out put files with workflow_id will be address here in "public html" to generate the "meta.js" file which is input for frontent in ClientV2 JSON inspector react Commponent. (first GET in work_flow script in utils folder). 
 
 "security" - the folder containing the security information for https/wss
    - webworkbench.key - private key file (filename is an example, may be configured)
