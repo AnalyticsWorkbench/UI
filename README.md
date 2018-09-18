@@ -1,4 +1,6 @@
-# Analytics Workbench Setup UI with NetBeans using postgresSQL
+## Analytics Workbench Setup UI with NetBeans using postgresSQL
+
+
 
 For running the Workbench, some additional folders and files are necessary:
 in UI folder:
@@ -23,12 +25,13 @@ esp. MetaAnaysis out put files with workflow_id will be address here in "public 
    - webworkbench.key - private key file (filename is an example, may be configured)
    - webworkbench.crt - certificate file (filename is an example, may be configured)
 
+---
    (Tutorial for creating keys, for "on a Mac" but actually "using openssl":
     http://houseofding.com/2008/11/generate-a-self-signed-ssl-certificate-for-local-development-on-a-mac/)
 
 You have to create users by running "usercreator.js" (whenever you start with a completely SQLSpaces server)
 
-Main file is workbench.js
+Main file is workbench.js that can be execute
 
   - first, install necessary module by "npm install" in this directory
 
@@ -74,7 +77,7 @@ run the psql before runing workbench you can do it manually by the command line 
 ```
    node workbench.js
 ```
-     
+  or execute with your IDE.   
   check here for more info: https://www.postgresql.org/docs/8.0/static/app-createdb.html
 
   See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
