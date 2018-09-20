@@ -14,7 +14,7 @@ $ cd UI/public_html
 $ mkdir results
 ```
 
-<img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="300" height="380">
+<img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="340" height="380">
 
 
 "results" - the folder that is used to server analysis results.
@@ -39,9 +39,9 @@ Main file is workbench.js that can be execute
   try this commmands:
 
   ```
-  brew install node@8
-  brew link --overwrite --force node@8
-  npm install noble
+  $ brew install node@8
+  $ brew link --overwrite --force node@8
+  $ npm install noble
   ```
 
   - [not always] second step: run "node usercreator.js"
@@ -50,11 +50,11 @@ Main file is workbench.js that can be execute
 ```
   - [not always] second step: run "node postgresInitializer.js"
 ```
- node postgresInitializer.js
+  $ node postgresInitializer.js
 ```
 run the psql before runing workbench you can do it manually by the command line :
 ```
-   postgres -D /usr/local/var/postgres
+  $ postgres -D /usr/local/var/postgres
 ```
    
    to create user having psql DB is necessary:
@@ -88,7 +88,7 @@ run the psql before runing workbench you can do it manually by the command line 
 #### 1 .npm install
 first comand before run the commands in tasks folder is :
 ```
-   npm install
+  $ npm install
 ```
   if you face problem check on this wiki you can find your solution 
 
@@ -99,11 +99,11 @@ first comand before run the commands in tasks folder is :
 
 ###### solution is clear your npm cash.  
 ```
-  npm cache clean --force 
+  $ npm cache clean --force 
 ```
    after installing npm if you have potential package lost try :
 ```
-  npm audit
+  $ npm audit
 ```
    and install missed dependencies.
 
@@ -140,12 +140,14 @@ first comand before run the commands in tasks folder is :
  sh: tasks/compile: Permission denied
 To give the file "the_file_name" execute permission (if the file-system allows you with the RW rights):
 ```
-chmod +x the_file_name
+$ chmod +x the_file_name
 
 ```  
 an example is here after you got permission and do ls you should see * on your script as permission granted by Linux core
 then do "npm install" again.
-![screenshot 2018-07-26 15 17 41](https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png)
+
+<img src="https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png" width="660" height="380">
+
 
 ###### error : 
 Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0.0)
@@ -156,7 +158,7 @@ Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0
 Removing node_modules and running npm install if not fix try this command.
 
  ```
- npm rebuild node-sass
+ $ npm rebuild node-sass
  ```
  ###### error :
  Error: ENOENT: no such file or directory, open '/Users/farbodaprin/Desktop/UIgit/UI/security/webworkbench.key'
@@ -164,7 +166,7 @@ Removing node_modules and running npm install if not fix try this command.
  
   ###### error :
   ```
-  npm run build
+  $ npm run build
    ```
   
   basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
@@ -192,13 +194,10 @@ npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build` ...
  
 Before pushing your changes on the remote branch, make sure if you add your file into the stage, exclude the security folder which contain your private key with this command before commiting.
 ```
-git add -u
-git reset -- main/dontcheckmein.txt
+$ git add -u
+$ git reset -- main/dontcheckmein.txt
 ```
- ![screenshot 2018-09-20 15 11 10](https://user-images.githubusercontent.com/17232450/45820995-6c49a380-bce8-11e8-87d3-7b7d8ad99bb8.png)
 
- 
- 
- 
- 
+<img src="https://user-images.githubusercontent.com/17232450/45820995-6c49a380-bce8-11e8-87d3-7b7d8ad99bb8.png" width="460" height="420">
+
  
