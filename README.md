@@ -183,12 +183,22 @@ SyntaxError: missing ) after argument list
     at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
-npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build`
-npm ERR! Exit status 1
-npm ERR! 
-npm ERR! Failed at the webworkbench-client-v2@1.0.0 build script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build` ...
 
  ###### solution is update webpack.
  npm install --save-dev webpack
+ 
+ ### Security
+ 
+Before pushing your changes on the remote branch, make sure if you add your file into the stage, exclude the security folder which contain your private key with this command before commiting.
+```
+git add -u
+git reset -- main/dontcheckmein.txt
+```
+ ![screenshot 2018-09-20 15 11 10](https://user-images.githubusercontent.com/17232450/45820995-6c49a380-bce8-11e8-87d3-7b7d8ad99bb8.png)
+
+ 
+ 
+ 
+ 
  
