@@ -192,7 +192,7 @@ npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build` ...
  
  ### Security
  
-Before pushing your changes on the remote branch, make sure if you add your file into the stage, exclude the security folder which contain your private key with this command before commiting.
+Before pushing your changes on the remote branch, make sure if you add your file into the stage, exclude the security folder which contains your private key with this command before committing.
 ```
 $ git add -u
 $ git reset -- main/dontcheckmein.txt
