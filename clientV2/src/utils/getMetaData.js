@@ -39,7 +39,7 @@ export default function getMetaData(moduleId, modulesById, wiresById, filtersByI
 
 		const metaByInput = reduceIncommingModules(incommingModules, walk);
 
-		if (!js_transform_meta) return undefined;
+		if (!js_transform_meta) return undefined; // we have no transform_meta
 		return js_transform_meta(form, value, metaByInput);
 	}
 

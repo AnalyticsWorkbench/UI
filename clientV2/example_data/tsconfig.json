@@ -1,0 +1,30 @@
+{
+  "items": [{
+    "id": 4644,
+    "verb": "login",
+    "generator": {
+      "id": "WEB",
+      "name": "WEB",
+      "objectType": "application"
+    },
+    "actor": {
+      "id": 223,
+      "isClosedBetaParticipant": false,
+      "qualification": "ARZT",
+      "state": "BE",
+      "role": "ADMIN",
+      "systemId": 223,
+      "objectType": "person"
+    },
+    "object": {
+      "id": 223,
+      "isClosedBetaParticipant": false,
+      "qualification": "ARZT",
+      "state": "BE",
+      "role": "ADMIN",
+      "systemId": 223,
+      "objectType": "profile"
+    },
+    "published": "2013-10-23T09:03:51Z"
+  }]
+}

@@ -55,5 +55,5 @@ module.exports = config = {
     /*
      Directory from which results are served
      */
-    resultdir: 'results'
+    resultdir: 'results/'
 };

@@ -3,8 +3,8 @@
 //new TS.TupleSpace(connectOptions, function () {alert("geht")});
 
 
-//var connectOptions = {host: "localhost", port: 32525};
-// Auxiliary function
+//let connectOptions = {host: "localhost", port: 32525}; // FBA added was vconnection
+//Auxiliary function
 function calculateDate() {
 
     function normalizeNumber(number) {

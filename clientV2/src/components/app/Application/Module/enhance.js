@@ -30,7 +30,7 @@ const selector = createSelector(
 		const isInput = isInputModule(module, filtersById);
 		const isOutput = isOutputModule(module, filtersById);
 		const meta = metaDataByModuleId[id];
-		const metaInput = getMetaData(id, modulesById, wiresById, filtersById, metaDataByModuleId);
+		const metaInput = getMetaData(id, modulesById, wiresById, filtersById, metaDataByModuleId); //FBA here we need metaInput from backend
 		let metaStatus;
 
 		if (isInput) {

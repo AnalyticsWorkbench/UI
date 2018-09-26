@@ -1,7 +1,8 @@
+/* eslint-disable spaced-comment */
 import clone from 'lodash/lang/clone';
 import omit from 'lodash/object/omit';
 import reduce from 'lodash/collection/reduce';
-import createFilterIdFromName from 'utils/createFilterIdFromName';
+//import createFilterIdFromName from 'utils/createFilterIdFromName';
 
 const initialState = {
     status: undefined,
@@ -408,15 +409,21 @@ export default function workflow(state = initialState, action) {
 
         case 'WORKFLOW_GET_META_RESULTS_SUCCESS': {
             const { data, moduleId } = action.payload;
+
             const { runid } = action.meta;
-            return {
+            //const newRunId = "7ff953ee-9059-46d9-ab41-d4116cc18868"; //FBA MANUAL ADDD
+            //const newData = window[newRunId]; //FBA MANUAL ADDD
+
+            const newState = {
                 ...state,
                 metaDataByModuleId: {
                     ...state.metaDataByModuleId,
                     [moduleId]: data
+                    //[moduleId]: newData // MANUAL ADDD
                 },
                 metaWorkflowByRunid: omit(state.metaWorkflowByRunid, runid)
             };
+            return newState;
         }
 
         default: {

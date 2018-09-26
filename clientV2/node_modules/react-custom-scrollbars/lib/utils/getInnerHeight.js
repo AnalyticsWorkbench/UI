@@ -7,10 +7,9 @@ exports["default"] = getInnerHeight;
 function getInnerHeight(el) {
     var clientHeight = el.clientHeight;
 
-    var _getComputedStyle = getComputedStyle(el);
-
-    var paddingTop = _getComputedStyle.paddingTop;
-    var paddingBottom = _getComputedStyle.paddingBottom;
+    var _getComputedStyle = getComputedStyle(el),
+        paddingTop = _getComputedStyle.paddingTop,
+        paddingBottom = _getComputedStyle.paddingBottom;
 
     return clientHeight - parseFloat(paddingTop) - parseFloat(paddingBottom);
 }
