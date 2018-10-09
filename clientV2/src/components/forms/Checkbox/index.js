@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import styles from './styles.scss';
 
-const Checkbox = props => {
+const Checkbox = (props) => {
     const { label, className, ...rest } = props;
     return (
         <div className={cn(className, styles.container)} {...rest}>

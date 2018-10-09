@@ -50,7 +50,7 @@ export function save(data) {
 
 export function destroy(saveid) {
     return ({ dispatch, request }) => {
-        const confirmed = confirm('Are you sure that you want to delete this workflow?');
+        const confirmed = confirm('="  that you want to delete this workflow?');
         if (!confirmed) return;
 
         dispatch({
