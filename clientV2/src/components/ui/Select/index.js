@@ -1,7 +1,7 @@
 import reduce from 'lodash/collection/reduce';
 import map from 'lodash/collection/map';
 import sortBy from 'lodash/collection/sortBy';
-import Select from 'react-select';
+// import Select from 'react-select';
 import cn from 'classnames';
 
 import React, { PropTypes, createClass } from 'react';
@@ -67,23 +67,24 @@ export default createClass({
     },
 
     render() {
-        const {
-            multiple,
-            options,
-            placeholder,
-            className,
-            ...props
-        } = this.props;
-        //const finalValue = 0;
+            const {
+                multiple,
+                options,
+                value,
+                placeholder,
+                className,
+                ...props
+            } = this.props;
+        //    const finalValue = null;
         // if (placeholder && !value) {
         //     // Set empty string as default value.
         //     // This will show up the placeholder option, when no value is set.
-        //     finalValue = '';ß
+        //     finalValue = '';
         // }
         return (
-            <slect className={cn(className, styles.input)} value={[options[1]]} multiple={multiple}>
+            <select className={cn(className, styles.input)} multiple={multiple} {...props}>
                 {options.map((opt) => <option value={opt}> {opt} </option>)}
-            </slect>
+            </select>
         );
     }
 });
@@ -93,3 +94,4 @@ export default createClass({
 // {/*: children}*/}
 
 
+{/*<option value="Degree">null</option>*/}
