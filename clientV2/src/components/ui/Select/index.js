@@ -3,44 +3,20 @@ import map from 'lodash/collection/map';
 import sortBy from 'lodash/collection/sortBy';
 // import Select from 'react-select';
 import cn from 'classnames';
-
-import React, { PropTypes, createClass } from 'react';
-
-const defaultRenderOption = props => <option {...props}/>;
-
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 import styles from './styles.scss';
 
-export default createClass({
 
-    displayName: 'Select',
+class Select extends React.Component {
 
-    propTypes: {
-        name: PropTypes.string,
-        options: PropTypes.object,
-        value: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.array
-        ]).isRequired,
-        multiple: PropTypes.bool,
-        placeholder: PropTypes.any,
-        renderOption: PropTypes.func,
-        onChange: PropTypes.func.isRequired,
-        children: PropTypes.node,
-        className: PropTypes.string
-    },
-
-    getDefaultProps() {
-        return {
-            renderOption: defaultRenderOption
-        };
-    },
 
     renderOptions(options, multiple, placeholder) {
-        const { renderOption } = this.props;
+        const {renderOption} = this.props;
         const children = [];
 
         const mapped = map(options, (label, value) => {
-            return { label, value };
+            return {label, value};
         });
 
         const sorted = sortBy(mapped, 'label');
@@ -56,7 +32,7 @@ export default createClass({
             );
         }
 
-        return reduce(sorted, (acc, { label, value }) => {
+        return reduce(sorted, (acc, {label, value}) => {
             acc.push(renderOption({
                 key: value,
                 value,
@@ -64,34 +40,40 @@ export default createClass({
             }));
             return acc;
         }, children);
-    },
+    }
 
     render() {
-            const {
-                multiple,
-                options,
-                value,
-                placeholder,
-                className,
-                ...props
-            } = this.props;
-        //    const finalValue = null;
-        // if (placeholder && !value) {
-        //     // Set empty string as default value.
-        //     // This will show up the placeholder option, when no value is set.
-        //     finalValue = '';
-        // }
+        const {
+            multiple,
+            options,
+            value,
+            placeholder,
+            className,
+            ...props
+        } = this.props;
         return (
             <select className={cn(className, styles.input)} multiple={multiple} {...props}>
+                <option value="Degree">null</option>
                 {options.map((opt) => <option value={opt}> {opt} </option>)}
             </select>
         );
     }
-});
+}
+Select.propTypes = {
+    name: PropTypes.string.isRequired,
+    options: PropTypes.object.isRequired,
+    value: PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.array.isRequired
+    ]).isRequired.isRequired,
+    multiple: PropTypes.bool.isRequired,
+    placeholder: PropTypes.any.isRequired,
+    renderOption: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string.isRequired
+};
 
-// {/*{options*/}
-// {/*? this.renderOptions(options, multiple, placeholder)*/}
-// {/*: children}*/}
+export default Select;
 
 
-{/*<option value="Degree">null</option>*/}
