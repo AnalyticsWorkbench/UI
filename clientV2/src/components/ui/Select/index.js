@@ -4,13 +4,23 @@ import sortBy from 'lodash/collection/sortBy';
 // import Select from 'react-select';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './styles.scss';
 
 
 class Select extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {showWarning: true};
+    }
 
+    WarningBanner(props) {
+        if (props) {
+            if (window.confirm('Please select at least one centrality filter!'))
+                this.state.showWarning = false;
+        }
+    }
     renderOptions(options, multiple, placeholder) {
         const {renderOption} = this.props;
         const children = [];
@@ -52,10 +62,18 @@ class Select extends React.Component {
             ...props
         } = this.props;
         return (
-            <select className={cn(className, styles.input)} multiple={multiple} {...props}>
-                <option value="Degree">null</option>
-                {options.map((opt) => <option value={opt}> {opt} </option>)}
-            </select>
+            <div>
+                {this.state.showWarning ? (
+                    this.WarningBanner(this.state.showWarning)
+                ) : (
+                    <div>Please Select At least one fileter !</div>
+                )}
+                <select className={cn(className, styles.input)} multiple={multiple} {...props}>
+                    <option value="Degree">null</option>
+                    {options.map((opt) => <option value={opt}> {opt} </option>)}
+                </select>
+            </div>
+
         );
     }
 }

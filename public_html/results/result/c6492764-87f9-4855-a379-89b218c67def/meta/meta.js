@@ -1,1 +1,0 @@
-(function() { window['c6492764-87f9-4855-a379-89b218c67def'] = ({"fileType":"json","dataType":"ActivityStream"}); })()
