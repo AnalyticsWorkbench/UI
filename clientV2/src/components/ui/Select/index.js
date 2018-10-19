@@ -68,10 +68,11 @@ class Select extends React.Component {
                 ) : (
                     <div>Please Select At least one fileter !</div>
                 )}
-                <select className={cn(className, styles.input)} multiple={multiple} {...props}>
-                    <option value="Degree">null</option>
-                    {options.map((opt) => <option value={opt}> {opt} </option>)}
-                </select>
+            <select
+                className={cn(className, styles.input)} value={value} multiple={multiple}{...props}>
+                <option value="Degree">null</option>
+                {options.map((opt) => <option value={opt}> {opt} </option>)}
+            </select>
             </div>
 
         );
