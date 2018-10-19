@@ -132,6 +132,7 @@ chmod +x the_file_name
 
 ```   
 an example is here after you got permission and do ls you should see * on your script as permission granted by Linux core
+to acctivate the permition do the "npm i" again.
 
 ![screenshot 2018-07-26 15 17 41](https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png)
 
