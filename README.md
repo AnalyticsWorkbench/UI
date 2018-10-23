@@ -143,8 +143,12 @@ To give the file "the_file_name" execute permission (if the file-system allows y
 $ chmod +x the_file_name
 
 ```  
+##deleting Package.jason.lock file and Nodemodule folder 
+before doing "npm install" again make sure you remove Package.jason.lock file and Nodemodule folder  then restart it again.
+
 an example is here after you got permission and do ls you should see * on your script as permission granted by Linux core
 then do "npm install" again.
+
 
 <img src="https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png" width="660" height="380">
 
