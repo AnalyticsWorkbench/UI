@@ -6,8 +6,10 @@ import cn from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './styles.scss';
+import Storagekeys from 'utils/Storagekeys';
 
 
+// const ALARM_STATE = Storagekeys.alarm;
 class Select extends React.Component {
 
     constructor(props) {
@@ -17,10 +19,15 @@ class Select extends React.Component {
 
     WarningBanner(props) {
         if (props) {
-            if (window.confirm('Please select at least one centrality filter!'))
+            if (Storagekeys.alarm) {
                 this.state.showWarning = false;
+                window.confirm('Please select at least one centrality filter!');
+        }
+            Storagekeys.alarm = false;
+            this.state.showWarning = false;
         }
     }
+
     renderOptions(options, multiple, placeholder) {
         const {renderOption} = this.props;
         const children = [];
@@ -70,7 +77,7 @@ class Select extends React.Component {
                 )}
             <select
                 className={cn(className, styles.input)} value={value} multiple={multiple}{...props}>
-                <option value="Degree">null</option>
+                <option value="null">null</option>
                 {options.map((opt) => <option value={opt}> {opt} </option>)}
             </select>
             </div>
