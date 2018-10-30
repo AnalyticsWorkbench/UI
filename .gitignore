@@ -98,3 +98,11 @@ typings/
 
 #security folder
 /security
+
+#results should not be posted on remote
+ public_html/results/
+#results should not be posted on remote
+ /results
+#results should not be posted on remote
+     results/
+

@@ -1,39 +1,44 @@
 import reduce from 'lodash/collection/reduce';
 import map from 'lodash/collection/map';
 import sortBy from 'lodash/collection/sortBy';
-// import Select from 'react-select';
 import cn from 'classnames';
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PropTypes, createClass } from 'react';
+
+const defaultRenderOption = props => <option {...props}/>;
+
 import styles from './styles.scss';
-import Storagekeys from 'utils/Storagekeys';
 
+export default createClass({
 
-// const ALARM_STATE = Storagekeys.alarm;
-class Select extends React.Component {
+    displayName: 'Select',
 
-    constructor(props) {
-        super(props);
-        this.state = {showWarning: true};
-    }
+    propTypes: {
+        name: PropTypes.string,
+        options: PropTypes.object,
+        value: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.array
+        ]).isRequired,
+        multiple: PropTypes.bool,
+        placeholder: PropTypes.any,
+        renderOption: PropTypes.func,
+        onChange: PropTypes.func.isRequired,
+        children: PropTypes.node,
+        className: PropTypes.string
+    },
 
-    WarningBanner(props) {
-        if (props) {
-            if (Storagekeys.alarm) {
-                this.state.showWarning = false;
-                window.confirm('Please select at least one centrality filter!');
-        }
-            Storagekeys.alarm = false;
-            this.state.showWarning = false;
-        }
-    }
+    getDefaultProps() {
+        return {
+            renderOption: defaultRenderOption
+        };
+    },
 
     renderOptions(options, multiple, placeholder) {
-        const {renderOption} = this.props;
+        const { renderOption } = this.props;
         const children = [];
 
         const mapped = map(options, (label, value) => {
-            return {label, value};
+            return { label, options };
         });
 
         const sorted = sortBy(mapped, 'label');
@@ -49,7 +54,7 @@ class Select extends React.Component {
             );
         }
 
-        return reduce(sorted, (acc, {label, value}) => {
+        return reduce(sorted, (acc, { label, value }) => {
             acc.push(renderOption({
                 key: value,
                 value,
@@ -57,49 +62,31 @@ class Select extends React.Component {
             }));
             return acc;
         }, children);
-    }
+    },
 
     render() {
         const {
             multiple,
-            options,
+            children,
             value,
+            options,
             placeholder,
             className,
             ...props
         } = this.props;
-        return (
-            <div>
-                {this.state.showWarning ? (
-                    this.WarningBanner(this.state.showWarning)
-                ) : (
-                    <div>Please Select At least one fileter !</div>
-                )}
-            <select
-                className={cn(className, styles.input)} value={value} multiple={multiple}{...props}>
-                <option value="null">null</option>
-                {options.map((opt) => <option value={opt}> {opt} </option>)}
-            </select>
-            </div>
 
+        let finalValue = options[value]; // FBA4 here was the bug that numberized final value
+        if (placeholder && !value) {
+            // Set empty string as default value.
+            // This will show up the placeholder option, when no value is set.
+            finalValue = '';
+        }
+
+        return (
+            <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+                {options ? this.renderOptions(options, multiple, placeholder) : children}
+            </select>
         );
     }
-}
-Select.propTypes = {
-    name: PropTypes.string.isRequired,
-    options: PropTypes.object.isRequired,
-    value: PropTypes.oneOfType([
-        PropTypes.string.isRequired,
-        PropTypes.array.isRequired
-    ]).isRequired.isRequired,
-    multiple: PropTypes.bool.isRequired,
-    placeholder: PropTypes.any.isRequired,
-    renderOption: PropTypes.func.isRequired,
-    onChange: PropTypes.func.isRequired,
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string.isRequired
-};
-
-export default Select;
-
+});
 
