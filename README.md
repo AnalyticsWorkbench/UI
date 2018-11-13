@@ -1,4 +1,4 @@
-## Analytics Workbench Setup UI with NetBeans using postgresSQL
+## Analytics Workbench Setup UI with NetBeans using PostgreSQL
 
 
 
@@ -19,24 +19,24 @@ $ mkdir results
 
 "results" - the folder that is used to server analysis results.
 
-esp. MetaAnaysis out put files with workflow_id will be address here in "public html" to generate the "meta.js" file which is input for frontent in ClientV2 JSON inspector react Commponent. (first GET in work_flow script in utils folder). 
+Esp. meta-analysis output files with workflow_id will be addressed here in "public HTML" to generate the "meta.js" file which is input for frontend in ClientV2 JSON inspector react Component. (first GET in the work_flow script in utils folder). 
 
 "security" - the folder containing the security information for https/wss
    - webworkbench.key - private key file (filename is an example, may be configured)
    - webworkbench.crt - certificate file (filename is an example, may be configured)
 
 ---
-   (Tutorial for creating keys, for "on a Mac" but actually "using openssl":
+   (Tutorial for creating keys, for "on a Mac" but actually "using OpenSSL":
     http://houseofding.com/2008/11/generate-a-self-signed-ssl-certificate-for-local-development-on-a-mac/)
 
 You have to create users by running "usercreator.js" (whenever you start with a completely SQLSpaces server)
 
-Main file is workbench.js that can be execute
+The main file is workbench.js that can be executed
 
-  - first, install necessary module by "npm install" in this directory
+  - first, install the necessary module by "npm install" in this directory
 
-  on mac OS if you got error on node install becasue of version No longer building under node 10.0.0 / macOS 10.13.4
-  try this commmands:
+  on Mac OS if you got an error on node install because of version No longer building under node 10.0.0 / macOS 10.13.4
+  try this commands:
 
   ```
   $ brew install node@8
@@ -52,7 +52,7 @@ Main file is workbench.js that can be execute
 ```
   $ node postgresInitializer.js
 ```
-run the psql before runing workbench you can do it manually by the command line :
+run the psql before running workbench you can do it manually by the command line :
 ```
   $ postgres -D /usr/local/var/postgres
 ```
@@ -61,10 +61,10 @@ run the psql before runing workbench you can do it manually by the command line 
 ```
   created workbench
 ```
-   To login into the workbench with (User: admin, Pass: admin-pw) runnig Start redis-server is neccessrary.
+   To login into the workbench with (User: admin, Pass: admin-pw) running Start redis-server is necessary.
    Please clone this repository and follow Readme: 
    
-   short commands in for running redis-server :
+   short commands in for running Redis-server :
    
 ```
    % make
@@ -77,16 +77,16 @@ run the psql before runing workbench you can do it manually by the command line 
 ```
    node workbench.js
 ```
-  or execute with your IDE.   
+  Or execute with your IDE.   
   check here for more info: https://www.postgresql.org/docs/8.0/static/app-createdb.html
 
-  See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup
+  See https://github.com/AnalyticsWorkbench/Components for general instructions on system setup.
 
 ## Debugging ClientV2
 
 
 #### 1 .npm install
-first comand before run the commands in tasks folder is :
+for both previous UI and clientV2, the first command before execution in tasks folder is :
 ```
   $ npm install
 ```
@@ -101,7 +101,7 @@ first comand before run the commands in tasks folder is :
 ```
   $ npm cache clean --force 
 ```
-   after installing npm if you have potential package lost try :
+   after installing npm if you have the potential package lost try :
 ```
   $ npm audit
 ```
@@ -159,7 +159,7 @@ Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0
 
 ###### solution is reinstall the nodmodule and rebuid node-sass.
 
-Removing node_modules and running npm install if not fix try this command.
+Removing node_modules and running npm install if not fix,  then try this command.
 
  ```
  $ npm rebuild node-sass
@@ -204,7 +204,7 @@ $ git reset -- main/dontcheckmein.txt
 
 <img src="https://user-images.githubusercontent.com/17232450/45820995-6c49a380-bce8-11e8-87d3-7b7d8ad99bb8.png" width="460" height="420">
 
-### Debuging and IDE tools:
+### Debugging and IDE tools:
 
 suggested frontend debugging tool: Chrome extension **React**, **Redux**
 for putting brack point on your browser go into **.webpack** folder and inside you can see all components before compilation into webpack.

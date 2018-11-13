@@ -36,32 +36,60 @@ export default createClass({
     renderOptions(options, multiple, placeholder) {
         const { renderOption } = this.props;
         const children = [];
+        if (options) {
+            const mapped = map(options, (label) => {  // FBA 4 value for label is not necessary. ORGIN: (label, value) =>
+                return {label, options};
+            });
 
-        const mapped = map(options, (label, value) => {
-            return { label, options };
-        });
+            const sorted = sortBy(mapped, 'label');
 
-        const sorted = sortBy(mapped, 'label');
+            if (!multiple && placeholder) {
+                children.push(
+                    renderOption({
+                        key: 'placeholder',
+                        value: '',
+                        disabled: true,
+                        children: placeholder
+                    })
+                );
+            }
 
-        if (!multiple && placeholder) {
-            children.push(
-                renderOption({
-                    key: 'placeholder',
-                    value: '',
-                    disabled: true,
-                    children: placeholder
-                })
-            );
+            return reduce(sorted, (acc, {label, value}) => {
+                acc.push(renderOption({
+                    key: value,
+                    value,
+                    children: label
+                }));
+                return acc;
+            }, children);
         }
+        if (!options) {
+            const mapped = map(options, (label, value) => {
+                return {label, value};
+            });
 
-        return reduce(sorted, (acc, { label, value }) => {
-            acc.push(renderOption({
-                key: value,
-                value,
-                children: label
-            }));
-            return acc;
-        }, children);
+            const sorted = sortBy(mapped, 'label');
+
+            if (!multiple && placeholder) {
+                children.push(
+                    renderOption({
+                        key: 'placeholder',
+                        value: '',
+                        disabled: true,
+                        children: placeholder
+                    })
+                );
+            }
+
+            return reduce(sorted, (acc, {label, value}) => {
+                acc.push(renderOption({
+                    key: value,
+                    value,
+                    children: label
+                }));
+                return acc;
+            }, children);
+        }
     },
 
     render() {
@@ -72,6 +100,7 @@ export default createClass({
             options,
             placeholder,
             className,
+            name,
             ...props
         } = this.props;
 
@@ -81,12 +110,32 @@ export default createClass({
             // This will show up the placeholder option, when no value is set.
             finalValue = '';
         }
-
+        if (!finalValue) {
+            if (name === 'value1' && !value) {
+                finalValue = 'Degree';
+            } else {
+                finalValue = value;
+            }
+        }
+        if (value === '0') {
+            finalValue = 'Degree';
+        }
+        // if (value === 'Forest-fire') {
+        //     return (
+        //         <div>
+        //             <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+        //                 {options ? this.renderOptions(options, multiple, placeholder) : children}
+        //             </select>
+        //         </div>
+        //     );
+        // }
+        // noinspection JSAnnotator
         return (
-            <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
-                {options ? this.renderOptions(options, multiple, placeholder) : children}
-            </select>
+            <div>
+                <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+                    {options ? this.renderOptions(options, multiple, placeholder) : children}
+                </select>
+            </div>
         );
     }
 });
-
