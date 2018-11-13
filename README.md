@@ -204,4 +204,11 @@ $ git reset -- main/dontcheckmein.txt
 
 <img src="https://user-images.githubusercontent.com/17232450/45820995-6c49a380-bce8-11e8-87d3-7b7d8ad99bb8.png" width="460" height="420">
 
+### Debuging and IDE tools:
+
+suggested frontend debugging tool: Chrome extension **React**, **Redux**
+for putting brack point on your browser go into **.webpack** folder and inside you can see all components before compilation into webpack.
+
+
+
  
