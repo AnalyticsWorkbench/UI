@@ -69,5 +69,9 @@
     "webpack": "^1.12.2",
     "whatwg-fetch": "^0.10.1",
     "yargs": "^3.27.0"
+  },
+  "dependencies": {
+    "redux-thunk": "^2.3.0",
+    "store": "^2.0.12"
   }
 }
