@@ -86,7 +86,8 @@ const Detail = createClass({
              return (
                  <FilterForm
                      //form={form}
-                     form={filter.container.fields}
+                    // form={filter.container.fields} //FBA
+                     form={filter}
                      values={value}
                      messages={messages}
                      onChange={this.hanldeFilterFormChange}/>
@@ -95,8 +96,8 @@ const Detail = createClass({
 
              return (
                  <FilterForm
-                     form={form}
-                     //form={filter.container}
+                     // form={form}
+                     form={filter.container}
                      values={value}
                      messages={messages}
                      onChange={this.hanldeFilterFormChange}/>

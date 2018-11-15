@@ -21,7 +21,7 @@ export default {
 				description: 'Handle file as text instead as binary'
 			}
 		},
-		descriptionText: 'Handle as text? determines if the data is handled as text or as binary. If the input is a text file (like most network formats), please check it. In doubt please leave it unchecked.',
+		descriptionText: 'Handle as tobias ? determines if the data is handled as text or as binary. If the input is a text file (like most network formats), please check it. In doubt please leave it unchecked.',
 		legend: 'This agent will upload a file or a data folder from your local file system, please think of the format conversion into a SISOB format.'
 	}
 };

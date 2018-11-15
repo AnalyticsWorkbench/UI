@@ -24,7 +24,8 @@ export default createClass({
         renderOption: PropTypes.func,
         onChange: PropTypes.func.isRequired,
         children: PropTypes.node,
-        className: PropTypes.string
+        className: PropTypes.string,
+        onSelectChange: PropTypes.func
     },
 
     getDefaultProps() {
@@ -101,6 +102,8 @@ export default createClass({
             placeholder,
             className,
             name,
+            onChange,
+            onSelectChange,
             ...props
         } = this.props;
 
@@ -117,22 +120,15 @@ export default createClass({
                 finalValue = value;
             }
         }
-        if (value === '0') {
-            finalValue = 'Degree';
-        }
-        // if (value === 'Forest-fire') {
-        //     return (
-        //         <div>
-        //             <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
-        //                 {options ? this.renderOptions(options, multiple, placeholder) : children}
-        //             </select>
-        //         </div>
-        //     );
+        // if (name === 'value1') {
+        //     value = 'Degree';
         // }
-        // noinspection JSAnnotator
         return (
             <div>
-                <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+                <select onChange={(ev)=>{
+                    this.props.onChange(ev);
+                    this.props.onSelectChange(ev);
+                }} className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
                     {options ? this.renderOptions(options, multiple, placeholder) : children}
                 </select>
             </div>
