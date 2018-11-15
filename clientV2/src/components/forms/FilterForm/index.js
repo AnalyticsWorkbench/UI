@@ -55,10 +55,11 @@ const renderComponentByType = {
         );
     },
     // For legacy component descriptions
-    select: (field, id) => {
-        const { selectValues, name} = field;
+    select: (field, id ) => {
+        const { selectValues, name } = field;
         return (
             <Select
+                value={selectValues}
                 name={name}
                 placeholder={selectValues[0]}
                 options={selectValues}/>

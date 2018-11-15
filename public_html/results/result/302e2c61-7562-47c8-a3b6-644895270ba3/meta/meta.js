@@ -1,1 +1,0 @@
-(function() { window['302e2c61-7562-47c8-a3b6-644895270ba3'] = ({"fileType":"sgf","dataType":"Unknown"}); })()
