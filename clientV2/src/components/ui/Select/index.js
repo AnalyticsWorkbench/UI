@@ -2,11 +2,10 @@ import reduce from 'lodash/collection/reduce';
 import map from 'lodash/collection/map';
 import sortBy from 'lodash/collection/sortBy';
 import cn from 'classnames';
-import React, { PropTypes, createClass } from 'react';
+import React, {createClass, PropTypes} from 'react';
+import styles from './styles.scss';
 
 const defaultRenderOption = props => <option {...props}/>;
-
-import styles from './styles.scss';
 
 export default createClass({
 
@@ -125,10 +124,16 @@ export default createClass({
         // }
         return (
             <div>
-                <select onChange={(ev)=>{
+                <select
+                    onChange={(ev) => {
                     this.props.onChange(ev);
                     this.props.onSelectChange(ev);
-                }} className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+                    }}
+                    className={cn(className, styles.input)}
+                    value={finalValue}
+                    name={name}
+                    multiple={multiple}{...props}
+                >
                     {options ? this.renderOptions(options, multiple, placeholder) : children}
                 </select>
             </div>

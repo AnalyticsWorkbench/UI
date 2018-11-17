@@ -43,11 +43,13 @@ export default function filters(state = initialState, action) {
 				fetching: true
 			};
         }
-		case 'FILTERS_FETCH_SUCCESS': {
+
+        case 'FILTERS_FETCH_SUCCESS': {
+            debugger;
             return {
 				...state,
 				fetching: false,
-                byId: indexFilters([...action.payload, directUploaderConfiguration])
+                byId: indexFilters(myFunction([...action.payload, directUploaderConfiguration]))
 			};
         }
 		case 'FILTERS_FETCH_ERROR': {
@@ -62,3 +64,10 @@ export default function filters(state = initialState, action) {
         }
     }
 }
+
+/*
+  function myFunction(payloadArray){
+  	payloadArray[0].name = 'new name';
+  	return [...payloadArray]
+  }
+ */

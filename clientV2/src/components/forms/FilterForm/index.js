@@ -142,11 +142,11 @@ export default createClass({
         };
     },
 
-
     onSelectChangeHanlder(ev) {
         console.log(ev);
         const selectedValue = ev.target.value;
-        if (this.props.form.id === 'graphgeneratorfilter') {
+        debugger;
+        if (this.props.form.id === 'graphgeneratorfilter' && ev.target.getAttribute('name') === 'method') {
             const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
             // this.renderForm(newFields);
             this.setState({fields});
