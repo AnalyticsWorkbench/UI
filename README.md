@@ -1,7 +1,5 @@
 ## Analytics Workbench Setup UI with NetBeans using postgresSQL
 
-
-
 For running the Workbench, some additional folders and files are necessary:
 in UI folder:
 
@@ -13,7 +11,7 @@ $ mkdir security
 $ cd UI/public_html
 $ mkdir results
 ```
-
+## CLientV2
 <img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="340" height="380">
 
 
@@ -212,6 +210,6 @@ for putting brack point on your browser go into **.webpack** folder and inside y
 
 <img src="https://user-images.githubusercontent.com/17232450/48421534-fb10f480-e75c-11e8-976f-5aee18557c0d.png" width="640" height="380">
  
-# CLIENT V2 wiki + youTube tutorial 
+## CLIENT V2 wiki + youTube tutorial 
 you can find more information about clientV2 in detail on the wiki part.
 https://github.com/AnalyticsWorkbench/UI/wiki
