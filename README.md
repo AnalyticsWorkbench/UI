@@ -212,3 +212,6 @@ for putting brack point on your browser go into **.webpack** folder and inside y
 
 <img src="https://user-images.githubusercontent.com/17232450/48421534-fb10f480-e75c-11e8-976f-5aee18557c0d.png" width="640" height="380">
  
+# CLIENT V2 wiki + youTube tutorial 
+you can find more information about clientV2 in detail on the wiki part.
+https://github.com/AnalyticsWorkbench/UI/wiki
