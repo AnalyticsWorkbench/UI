@@ -1,4 +1,4 @@
-import React, { PropTypes, createClass } from 'react';
+import React, {createClass, PropTypes} from 'react';
 
 import shouldComponentUpdate from 'utils/shouldComponentUpdate';
 import StageBase from 'components/ui/Stage';

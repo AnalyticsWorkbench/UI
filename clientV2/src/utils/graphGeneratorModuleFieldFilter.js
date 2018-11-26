@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 export default function graphGeneratorModuleFieldFilter(containerObject, selectedValue) {
     const fields = containerObject.fields;
     const letter = selectedValue.split('')[0];
@@ -10,4 +11,4 @@ export default function graphGeneratorModuleFieldFilter(containerObject, selecte
             return itemLetters.indexOf(letter) > -1;
         }
     });
-};
+}

@@ -106,7 +106,6 @@ export default createClass({
             onSelectChange,
             ...props
         } = this.props;
-
         let finalValue = options[value]; // FBA4 here was the bug that numberized final value
         if (placeholder && !value) {
             // Set empty string as default value.
@@ -120,9 +119,6 @@ export default createClass({
                 finalValue = value;
             }
         }
-        // if (name === 'value1') {
-        //     value = 'Degree';
-        // }
         return (
             <div>
                 <select onChange={(ev)=>{

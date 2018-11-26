@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 import reduce from 'lodash/collection/reduce';
 import sortBy from 'lodash/collection/sortBy';
 import map from 'lodash/collection/map';
@@ -126,7 +127,81 @@ const renderComponentByType = {
         );
     }
 };
-//=========================FBA5========================
+//=========================FBA5==================================
+
+// export default createClass({
+//
+// displayName: 'FilterForm',
+//
+// propTypes: {
+//     form: PropTypes.object.isRequired
+// },
+// getInitialState() { //FBA 6
+//     if (this.props.form.id === 'graphgeneratorfilter') {
+//         return {
+//             fields: this.props.form.container.fields || []
+//         };
+//     } else {
+//         return null;
+//     }
+// },
+// onSelectChangeHanlder(ev) {
+//     console.log(ev);
+//     const selectedValue = ev.target.value;
+//     const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
+//     // this.renderForm(newFields);
+//     this.setState({fields});
+//     this.forceUpdate();
+// },
+//
+// renderField(field, id) {
+//
+//     console.log(field);
+//     const { type } = field;
+//     const render = renderComponentByType[type];
+//     if (!render) return false;
+//     if (this.props.form.id === 'graphgeneratorfilter') {
+//         if (type === 'select') {
+//             return render(field, id, this.onSelectChangeHanlder);
+//         }
+//     } else {
+//         return render(field, id);
+//     }
+// },
+//
+// renderGroup(field, id) {
+//     const { label, name } = field;
+//     return (
+//         <FormGroup key={id} name={name} label={label}>
+//             {this.renderField(field, id)}
+//         </FormGroup>
+//     );
+// },
+//
+// renderForm() {
+//     const {form} = this.props;
+//     return map(
+//         sortBy(
+//             reduce(form, (acc, field, id) => {
+//                 const { rank } = field;
+//                 const el = this.renderGroup(field, id);
+//                 acc[id] = { el, rank };
+//                 return acc;
+//             }, {}),
+//             'rank'
+//         ), ({ el }) => el);
+// },
+//
+//     render() {
+//         const {form, ...props} = this.props;
+//         return (
+//             <Form {...props}>
+//                 {this.renderForm()}
+//             </Form>
+//         );
+//     }
+// });
+
 
 export default createClass({
 
@@ -136,26 +211,41 @@ export default createClass({
         form: PropTypes.object.isRequired
     },
 
-    getInitialState() {
-        return {
-            fields: this.props.form.container.fields || []
-        };
+    getInitialState() { //FBA 6
+        if (this.props.form && this.props.form.id && this.props.form.id === 'graphgeneratorfilter') {
+            return {
+                fields: this.props.form.container.fields || []
+            };
+        }
+        else {
+            return {fields: this.props.form || []};
+        }
     },
-
-
+    componentWillReceiveProps(newProps) {
+        if (newProps.form === this.props.form) return;
+        if (newProps.form &&
+            newProps.form.id &&
+            newProps.form.id === 'graphgeneratorfilter'
+        ) {
+            this.setState({fields: newProps.form.container.fields || []});
+        } else if (!newProps.form || !newProps.form.id || newProps.form.id !== 'graphgeneratorfilter') {
+            this.setState({fields: newProps.form || []});
+        }
+    },
     onSelectChangeHanlder(ev) {
         console.log(ev);
         const selectedValue = ev.target.value;
         if (this.props.form.id === 'graphgeneratorfilter') {
+            debugger;
             const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
-            // this.renderForm(newFields);
-            this.setState({fields});
+            // this.renderForm(fields);
+            this.setState({fields}, () => this.renderForm(this.state.fields));
             this.forceUpdate();
         }
     },
 
     renderField(field, id) {
-        const { type } = field;
+        const {type} = field;
         const render = renderComponentByType[type];
         if (!render) return false;
         if (type === 'select') {
@@ -165,7 +255,7 @@ export default createClass({
     },
 
     renderGroup(field, id) {
-        const { label, name } = field;
+        const {label, name} = field;
         return (
             <FormGroup key={id} name={name} label={label}>
                 {this.renderField(field, id)}
@@ -174,20 +264,23 @@ export default createClass({
     },
 
     renderForm(fields) {
+        let f = fields;
+        if (!f) {
+            f = this.props.form;
+        }
         return map(
             sortBy(
                 reduce(fields, (acc, field, id) => {
-                    const { rank } = field;
+                    const {rank} = field;
                     const el = this.renderGroup(field, id);
-                    acc[id] = { el, rank };
+                    acc[id] = {el, rank};
                     return acc;
                 }, {}),
                 'rank'
-            ), ({ el }) => el);
+            ), ({el}) => el);
     },
 
     render() {
-        debugger;
         if (!this.state.fields || this.state.fields.length === 0) return null;
         const {...props} = this.props;
         return (

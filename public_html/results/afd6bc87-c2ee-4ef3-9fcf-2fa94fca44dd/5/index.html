@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf8"></mata>
+    <link rel="stylesheet" type="text/css" href="lib/jquerymobile/jquery.mobile-1.4.1.css" media="screen" />
+    <link rel="stylesheet" media="screen" type="text/css" href="lib/colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script>
+		$(document).on( "mobileinit", function() {$.mobile.selectmenu.prototype.options.nativeMenu = false;});
+	</script>
+	<script src="lib/jquerymobile/jquery.mobile-1.4.1.js"></script>
+	<script src="lib/colorpicker/js/colorpicker.js"></script>
+    <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+    <script src="engine.js" charset="utf-8"></script>
+    <script src="gframework.js"  type="application/javascript"></script>
+    <title>Network Analysis Workbench Visualization</title>
+</head>
+
+<body onload="executeVisualization()">
+
+	<div id='wrapper' class="page" data-role="page" data-dom-cache="false">
+		<div id="headerWrapper">
+			<div data-role="header" id="header" class="ui-bar">
+				<a id="menuBtn" data-role="button" data-inline="true"
+					data-icon="gear" data-rel="popup" href="#nav">Options</a>
+				<h1>
+					<a role="button" data-role="button" data-icon="info" data-rel="popup" data-transition="slidedown"
+					class="ui-link ui-btn ui-btn-a ui-icon-info ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" 
+					href="#popupBasic" data-iconpos="notext" data-inline="true">Info</a>
+					<span id="title"></span>
+				</h1>
+				<a id="searchBtn" data-role="button" data-inline="true"
+					data-icon="search" data-rel="popup" href="#search">Search</a>
+			</div>
+		</div>
+		
+		
+		<!-- MENU popup -->		
+		<div id="contentWrapper" class="ui-content">
+			<div data-role="popup" id="nav">
+			    <ul data-role="listview">
+			        <li><a id="measures">Attributes</a></li>
+			        <li><a id="timenavigation">Time Navigation</a></li>
+			        <li><a id="layoutoptions">Layout Options</a></li>
+			    </ul>
+			</div>   
+			<div id="content" >
+				<!-- CANVAS is in here -->
+			</div>
+		</div>
+		
+		<!-- Metadata Popup -->
+		<div data-role="popup" id="popupBasic">
+			<h3>Title:</h3> 
+			<span id="networkTitle">Not available.</span>
+			<h3>Type:</h3> 
+			<span id="networkType">Not available.</span>
+			<h3>Time:</h3> 
+			<span id="networkTime">Not available.</span>
+			<h3>Direction:</h3>
+			<span id="networkDirectionInfo"></span>
+			<h3>Description:</h3>
+			<span id="networkDescription"></span>
+		</div>
+	
+		<!-- Right Panel - Search -->	
+		<div id='search' data-role="panel" data-position="right"
+				data-display="" data-swipe-close="false">
+			<div class="panel-content">
+			<a id="closePanelBtnSearch" href="index.html" data-role="button"
+					data-icon="delete" data-iconpos="notext">Delete</a>
+			<!-- Search Controls -->
+				<div id="searchcontrols">
+					<h3>Search for a node</h3>
+					<input id="searchfield" type="search" list="suggestions" />
+                    <fieldset data-role="collapsible" id="collapsibleRatio">
+                        <legend>Search Scopes</legend>
+                        <input type="radio" name="radio-choice-v-2" id="radio-choice-a" value='0' checked="checked">
+                        <label for="radio-choice-a">None</label>
+                        <input type="radio" name="radio-choice-v-2" id="radio-choice-b" value='1' >
+                        <label for="radio-choice-b">1.0x</label>
+                        <input type="radio" name="radio-choice-v-2" id="radio-choice-c" value='2' >
+                        <label for="radio-choice-c">1.5x</label>
+                        <input type="radio" name="radio-choice-v-2" id="radio-choice-d" value='3' >
+                        <label for="radio-choice-d">2.0x</label>
+                        <input type="radio" name="radio-choice-v-2" id="radio-choice-e" value='4' >
+                        <label for="radio-choice-e">Trail</label>
+                    </fieldset>
+                    <fieldset data-role="collapsible" id="collapsibleList">
+                            <legend>Additional Information</legend>
+                            <div data-role="controlgroup" id="collapsibleContent">
+
+                            </div>
+                    </fieldset>
+                    <button id="searchbutton" data-icon="search" data-mini="true" >Search</button>
+					<button id="cleanbutton" data-icon="delete" data-mini="true" >Clean</button>
+					<datalist id="suggestions"></datalist>
+					<div id='searchresult'></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left Panel - The Sidebar / Toolbar -->
+		<div id="toolbar" data-role="panel" data-position="left" data-display="overlay" data-swipe-close="false">
+		<div class="panel-content">
+		<a id="closePanelBtn" href="index.html" data-role="button" data-icon="delete" data-iconpos="notext">Delete</a>
+		 	
+	        <!-- Time Navigation -->
+	        <div id="timenavigation_toolbar" class="invis">
+	        	<h3>Time Navigation Options</h3>
+	        	<label for="networktime">Timeslice</label>
+	        	<div data-role="controlgroup" data-type="horizontal">
+		        	<input id="backward" type="button" value="<">
+		        	<input id="networktime" type="button" value="0">
+		        	<input id="forward" type="button" value=">">
+	        	</div>
+	        	
+	        	<hr />
+	        	<h3>Dynamic Movie Control</h3>
+	        	<input id="play" type="button" value="Play" data-icon="video">
+	        	<input id="reset" value="Reset" data-mini="true" type="button" data-icon="" />
+	        	<input id="timeslider" type="range" min="0" max="0" value="0" data-highlight="true">
+	        	<h4>Movie Frame Duration [ms]</h4>
+	        	<input id="frameduration" type="text">
+	        	<input id="framedurationbutton" type="button" value="Apply">
+	        	<h4>Stabilize Layout By:</h4>
+                <select id="vstability">
+                    <option value="0">None</option>
+                    <option value="1">Drawing Structure</option>
+                    <option value="2">Node Name</option>
+                    <option value="3">Node ID </option>
+                </select>
+	        </div>
+	        
+	        <div id="customoptions" class="invis">
+	        	<!-- Customoptions are filled dynamically by the engine -->
+	        	<!-- Use jquery mobile syntax to describe the elements! -->
+	        	<!-- api.jquerymobile.com/1.3/category/widgets/ -->
+	        	<!-- h3 for headings and p for text -->
+	        </div>
+	        
+	    	<div id="measures_toolbar" class="invis">
+				<div id="MaP_main">
+	    		<div id="MaP_controls">
+			    	<div id="MaP_update">
+			    		<!-- Update Button -->
+			    		<input id="updateMaP" value="Update" type="button" data-icon="recycle" />
+			    		<input id="resetMaP" value="Reset" data-mini="true" type="button" data-icon="" />
+			    	</div>
+			    	
+		    		<hr />
+			    	<fieldset id="MaP_menu" data-role="controlgroup" data-type="horizontal">
+                        <input type="button" id="MaP_MapBtn" data-mini="true" data-icon="star" value="Map">
+                        <input type="button" id="MaP_FilterBtn" data-mini="true" data-icon="minus" value="Filter">
+						<input type="button" id="MaP_ResizeBtn" data-mini="true" class="ui-btn-active" data-icon="arrow-u-r" value="Scale">
+			    	</fieldset >
+			    	<hr />
+
+                </div>
+                    <!-- style import / export -->
+                    <fieldset  data-mini="true" data-role="controlgroup" data-type="horizontal">
+                        <a role="button" class="ui-link ui-btn ui-btn-inline ui-shadow ui-corner-all" aria-expanded="false" aria-owns="popupDialog" aria-haspopup="true" href="#importStyleDialog" data-rel="popup" data-position-to="window" data-role="button"  data-transition="pop" data-mini="true">Import Style</a>
+                        <a role="button" class="ui-link ui-btn ui-btn-inline ui-shadow ui-corner-all" aria-expanded="false" aria-owns="popupDialog" aria-haspopup="true" href="#exportStyleDialog" data-rel="popup" data-position-to="window" data-role="button"  data-transition="pop" data-mini="true">Export Style</a>
+                    </fieldset>
+                    <div id="importStyleDialog-popup" class="ui-popup-container pop ui-popup-hidden ui-popup-truncate">
+                        <div data-role="popup" id="importStyleDialog" data-overlay-theme="a" data-theme="a" style="max-width:400px;" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+                            <div role="banner" data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-a">
+                                <h1 aria-level="1" role="heading" class="ui-title">Import Style</h1>
+                            </div>
+                            <div role="main" class="ui-corner-bottom ui-content">
+                                <h3 class="ui-title">Style (JSON-Description):</h3>
+                                <textarea id="importStyleField"></textarea>
+                                <br>
+                                <a id="importStyleBtn" role="button" class="ui-link ui-btn ui-btn-b ui-btn-inline ui-shadow ui-corner-all" href="#" data-transition="flow" data-theme="b">Import</a>
+                                <a role="button" class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all" href="#" data-role="button" data-inline="true" data-rel="back" data-theme="a">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="exportStyleDialog-popup" class="ui-popup-container pop ui-popup-hidden ui-popup-truncate">
+                        <div data-role="popup" id="exportStyleDialog" data-overlay-theme="a" data-theme="a" style="max-width:400px;min-width: 300px;" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+                            <div role="banner" data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-a">
+                                <h1 aria-level="1" role="heading" class="ui-title">Export Style</h1>
+                            </div>
+                            <div role="main" class="ui-corner-bottom ui-content">
+                                <h3 class="ui-title">Style (JSON-Description):</h3>
+                                <textarea id="exportStyleField"></textarea>
+                                <br>
+                                <a role="button" class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all" href="#" data-role="button" data-inline="true" data-rel="back" data-theme="a">Done</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /measures+properties -->
+
+                <!-- Resizing -->
+                <div id="MaP_Resizing" class="invis">
+                    <h3>Resizing</h3>
+                    <!-- Label Scale -->
+                    <label for="labelScale">Label Scale (x-times)</label>
+                    <input id="labelScale" value="1" min="0" max="3" step="0.1" type="range" />
+                    <!-- Node Scale -->
+                    <label for="nodeScale">Node Scale (x-times)</label>
+                    <input id="nodeScale" value="1" min="0" max="10" step="0.1" type="range" />
+                    <!-- Edge Scale -->
+                    <label for="edgeScale">Edge Scale (x-times)</label>
+                    <input id="edgeScale" value="1" min="0" max="10" step="0.1" type="range" />
+                </div>
+
+                <!-- Filter -->
+                <div id="MaP_Filter" class="invis">
+                    <!-- Node Filtering -->
+                    <label for="nodeFilter" class="select"><h3>Node Filtering</h3></label>
+                    <select id="nodeFilter" value="none">
+                        <option value='none'>none</option>
+                    </select>
+                    <div id="nodeFilterSelectionWrapper">
+                        <div class="numberSelection invis">
+                            <input id="nodeFilterNumberValue" value="0" min="0" max="100" type="range" />
+                        </div>
+                        <div class="stringSelection invis">
+                            <select multiple id="nodeFilterStringValue" value="none"></select>
+                        </div>
+                        <div class="clusterSelection invis">
+                            <select multiple id="nodeFilterClusterValue" value="none"></select>
+                        </div>
+                    </div>
+                    <hr />
+                    <!-- Edge Filtering -->
+                    <label for="edgeFilter" class="select"><h3>Edge Filtering</h3></label>
+                    <select id="edgeFilter" value="none">
+                        <option value='none'>none</option>
+                    </select>
+                    <div id="edgeFilterSelectionWrapper">
+                        <div class="numberSelection invis">
+                            <input id="edgeFilterNumberValue" value="0" min="0" max="100" type="range" />
+                        </div>
+                        <div class="stringSelection invis">
+                            <select multiple id="edgeFilterStringValue" value="none"></select>
+                        </div>
+                        <div class="clusterSelection invis">
+                            <select multiple id="edgeFilterClusterValue" value="none"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div id="MaP_Map" class="invis">
+                    <!-- Node Mapping -->
+                    <div id="MaP_nodeMapping">
+                        <!-- Node Mapping -->
+                        <h3>Node</h3>
+                        <!-- Color Mapping -->
+                        <label for="nodeColoring" class="select">Color</label>
+                        <select id="nodeColoring" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                        <div id="nodeColoringSelectionWrapper">
+                            <div id="colorLabelsWrapper" class="invis">
+                                <input id="colorLabels" type="checkbox" name="checkbox-mini" data-mini="true" checked="false" />
+                                <label for="colorLabels">color labels?</label>
+                            </div>
+                            <div class="stringSelection invis">
+                                <ul id="nodeColoringStringValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div class="numberSelection invis">
+                                <ul id="nodeColoringNumberValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div class="clusterSelection invis">
+                                <ul id="nodeColoringClusterValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                        </div>
+                        <!-- Size Mapping -->
+                        <label for="nodeSize" class="select">Size</label>
+                        <select id="nodeSize" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                        <div id="nodeSizeSelectionWrapper">
+                            <div class="numberSelection invis">
+                                <label for="nodeSizeNumberValue">Max Node Size (x-times)</label>
+                                <input id="nodeSizeNumberValue" value="5" min="1" max="25" type="range" />
+                            </div>
+                        </div>
+                        <!-- Shape Mapping -->
+                        <label for="nodeShape" class="select">Shape</label>
+                        <select id="nodeShape" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                        <div id="nodeShapeSelectionWrapper">
+                            <div class="invis stringSelection">
+                                <ul id="nodeShapeStringValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div class="invis clusterSelection">
+                                <ul id="nodeShapeClusterValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div data-role="popup" id="popupShapeSelection">
+                                <ul data-role="listview" data-inset="true" class="ui-listview-inset ui-corner-all ui-shadow">
+                                    <!-- the name is in every element, to prevent cross browser conflicts (target-object) -->
+                                    <li name="symbol_0"><a href="#" name="symbol_0"><div name="symbol_0" class="symbol_0 symbol_thumbnail"></div></a></li>
+                                    <li name="symbol_1"><a href="#" name="symbol_1"><div name="symbol_1" class="symbol_1 symbol_thumbnail"></div></a></li>
+                                    <li name="symbol_2"><a href="#" name="symbol_2"><div name="symbol_2" class="symbol_2 symbol_thumbnail"></div></a></li>
+                                    <li name="symbol_3"><a href="#" name="symbol_3"><div name="symbol_3" class="symbol_3 symbol_thumbnail"></div></a></li>
+                                    <li name="symbol_4"><a href="#" name="symbol_4"><div name="symbol_4" class="symbol_4 symbol_thumbnail"></div></a></li>
+                                    <li name="symbol_5"><a href="#" name="symbol_5"><div name="symbol_5" class="symbol_5 symbol_thumbnail"></div></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+                    </div><!-- /node mapping -->
+
+                    <!-- edge mapping -->
+                    <div id="MaP_edgeMapping">
+                        <!-- Edge Mapping -->
+                        <h3>Edge</h3>
+                        <!-- Color Mapping -->
+                        <label for="edgeColoring" class="select">Color</label>
+                        <select id="edgeColoring" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                        <div id="edgeColoringSelectionWrapper">
+                            <div class="stringSelection invis">
+                                <ul id="edgeColoringStringValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div class="numberSelection invis">
+                                <ul id="edgeColoringNumberValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                            <div class="clusterSelection invis">
+                                <ul id="edgeColoringClusterValue" data-role="listview" data-inset="true"></ul>
+                            </div>
+                        </div>
+                        <!-- Size Mapping -->
+                        <label for="edgeSize" class="select">Size</label>
+                        <select id="edgeSize" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                        <div id="edgeSizeSelectionWrapper">
+                            <div class="numberSelection invis">
+                                <label for="edgeSizeNumberValue">Max Edge Size (x-times)</label>
+                                <input id="edgeSizeNumberValue" value="5" min="1" max="25" type="range" />
+                            </div>
+                        </div>
+
+                    </div><!-- /edge mapping -->
+
+                    <!-- Label Mapping -->
+                    <div id="MaP_labelMapping">
+                        <!-- Label Mapping -->
+                        <h3>Label</h3>
+                        <!-- Type Mapping -->
+                        <label for="labelType" class="select">Type</label>
+                        <select id="labelType" value="none">
+                            <option value='none'>none</option>
+                        </select>
+                    </div>
+            </div><!-- /MaP_controls -->
+        </div><!-- /map -->
+
+					
+
+
+		</div><!-- /panel content wrapper  -->
+		</div><!-- /toolbar panel -->
+		
+	</div>
+
+</body>
+
+</html>
