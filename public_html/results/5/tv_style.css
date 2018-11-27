@@ -1,0 +1,35 @@
+	#Header{
+        margin: 10px;
+    }
+    #Header h1{
+        margin: 0;
+        font-size: 1.5em;
+        color: darkblue;
+    }
+    #Header p{
+        margin: 0;
+        font-size: 1em;
+        font-style: italic;
+        color: darkgray;
+    }
+    table{
+        border-collapse:collapse;
+        font-size: 1em;
+        margin: 10px;
+        text-align: left;
+        border: 8px solid gray;
+        /*box-shadow:8px 8px 8px #666;*/
+    }
+    th{
+        margin-right: 5px;
+        background-color: lightgray;
+        padding: 3px;
+        padding-right: 6px;
+    }
+    td{
+        border: 1px solid lightgray;
+        padding: 3px;
+    }
+    #Table th{
+        cursor: pointer;
+    }

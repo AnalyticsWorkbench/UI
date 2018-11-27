@@ -16,6 +16,10 @@ function indexTerminalTypes(terminals, type) {
 	}, {});
 }
 
+// function myFunction(payloadArray) {
+//     payloadArray[1].name = 'Yassin Taskin';
+//     return [...payloadArray];
+// }
 function indexTerminalsById(filter) {
 	const { container } = filter;
 	const { inputs, outputs } = container;
@@ -43,12 +47,14 @@ export default function filters(state = initialState, action) {
 				fetching: true
 			};
         }
-		case 'FILTERS_FETCH_SUCCESS': {
+
+        case 'FILTERS_FETCH_SUCCESS': {
             return {
 				...state,
 				fetching: false,
-                byId: indexFilters([...action.payload, directUploaderConfiguration])
-			};
+                byId: indexFilters(([...action.payload, directUploaderConfiguration]))
+
+            };
         }
 		case 'FILTERS_FETCH_ERROR': {
             return {
@@ -62,3 +68,5 @@ export default function filters(state = initialState, action) {
         }
     }
 }
+
+

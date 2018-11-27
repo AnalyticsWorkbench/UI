@@ -1,0 +1,1 @@
+var src = ['0.json']
