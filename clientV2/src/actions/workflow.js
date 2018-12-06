@@ -372,7 +372,6 @@ export function metaExecute(moduleIds) {
                 filtersById,
                 user,
             });
-
             const { runid } = data;
             dispatch({
                 type: 'WORKFLOW_META_EXECUTE',
