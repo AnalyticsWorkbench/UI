@@ -12,7 +12,8 @@ const ignoreFilters = ['Meta Analysis'];
 
 const selector = createSelector(
 	state => state.filters.byId,
-	(filtersById) => {
+	state => state.workflow.recommendedModules,
+	(filtersById, recommendedModules) => {
 		const filtersByCategory = {};
 		const categories = [];
 
@@ -36,6 +37,7 @@ const selector = createSelector(
 
 		return {
             categories: sortedCategories,
+			recommendedModules: recommendedModules,
 			filtersByCategory
 		};
 	}

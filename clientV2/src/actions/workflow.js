@@ -100,6 +100,14 @@ export function addModule(filter) {
     };
 }
 
+export function addRecommendedModule(filter) {
+
+    return {
+        type: 'WORKFLOW_ADD_RECOMMENDED_MODULE',
+        payload: filter
+    }
+}
+
 export function removeModule(id) {
     return ({ dispatch }) => {
         const confirmed = confirm('Are you sure that you want to remove this module?');

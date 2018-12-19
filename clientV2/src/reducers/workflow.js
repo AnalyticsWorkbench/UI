@@ -214,6 +214,20 @@ export default function workflow(state = initialState, action) {
             };
         }
 
+        case 'WORKFLOW_ADD_RECOMMENDED_MODULE': {
+
+            var filter = action.payload;
+            const id = createId(state.modulesById);
+            filter.id = id;
+            return {
+                ...state,
+                modulesById: {
+                    ...state.modulesById,
+                    [id]: filter
+                }
+            }
+        }
+
         case 'WORKFLOW_ADD_MODULE': {
             const filter = action.payload;
             const { id: filterId, container } = filter;
@@ -235,6 +249,16 @@ export default function workflow(state = initialState, action) {
                         }
                     }
                 },
+                // Dies sollte demnächst aus der Datenbank kommen.
+                recommendedModules : [
+                    {
+                        filterId: filterId,
+                        value: 'betweenness',
+                        config: {
+                            position: [100, 100]
+                        }
+                    }
+                ],
                 changed: true
             };
         }

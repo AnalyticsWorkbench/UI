@@ -46,5 +46,9 @@ export const colorsByFilterCategory = {
     'Misc': {
         color: '#ab3e81',
         shade: '#ab145d'
+    },
+    'Recommended Modules': {
+        color: '#ff71b7',
+        shade: '#ff5497'
     }
 };
