@@ -3,15 +3,237 @@
   <component name="ChangeListManager">
     <list default="true" id="1346e3c6-f7c5-441f-af68-d2930608502d" name="Default" comment="update the node module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/src/components/app/Application/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/components/app/Application/index.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/lodash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/amd-define.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/amd-define.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/amd-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/amd-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/buildin/module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/dev-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/log-apply-result.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/log-apply-result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/only-dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/only-dev-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/poll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/hot/signal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/APIPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/APIPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AbstractPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AbstractPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AmdMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AmdMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ArrayMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ArrayMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AsyncDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AsyncDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AutomaticPrefetchPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/AutomaticPrefetchPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/BannerPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/BannerPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/BasicEvaluatedExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/BasicEvaluatedExpression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CachePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CachePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CaseSensitiveModulesWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CaseSensitiveModulesWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ChunkRenderError.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ChunkRenderError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ChunkTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ChunkTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CompatibilityPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CompatibilityPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Compilation.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Compilation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Compiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ConcatSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ConcatSource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ConstPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ConstPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ContextReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CriticalDependenciesWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/CriticalDependenciesWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DefinePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DefinePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedModuleFactoryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedModuleFactoryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DelegatedPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DependenciesBlockVariable.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DependenciesBlockVariable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Dependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Dependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllReferencePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/DllReferencePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EntryModuleNotFoundError.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EntryModuleNotFoundError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EntryOptionPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EntryOptionPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EnvironmentPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalDevToolModulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalDevToolModulePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalDevToolModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalDevToolModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalSourceMapDevToolModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalSourceMapDevToolModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalSourceMapDevToolPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/EvalSourceMapDevToolPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExtendedAPIPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExtendedAPIPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalModuleFactoryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalModuleFactoryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ExternalsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/FunctionModulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/FunctionModulePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/FunctionModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/FunctionModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotModuleReplacement.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotModuleReplacement.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotModuleReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotModuleReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotUpdateChunkTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/HotUpdateChunkTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/IgnorePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/IgnorePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpExportMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpExportMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpHotUpdateChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpHotUpdateChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpMainTemplate.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpMainTemplate.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/JsonpTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LibManifestPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LibManifestPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LibraryTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LibraryTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LoaderTargetPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/LoaderTargetPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MainTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MainTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MemoryOutputFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MemoryOutputFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Module.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleFilenameHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleFilenameHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleNotFoundError.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleNotFoundError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleParseError.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleParseError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleParserHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleParserHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleReason.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleReason.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ModuleTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MovedToPluginWarningPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MovedToPluginWarningPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiCompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiCompiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/MultiModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NamedModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NamedModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NewWatchingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NewWatchingPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NoErrorsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NoErrorsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NodeStuffPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NodeStuffPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModuleReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NormalModuleReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NullFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/NullFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OldWatchingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OldWatchingPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OptionsApply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OriginalSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/OriginalSource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/PrefetchPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/PrefetchPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ProgressPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ProgressPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ProvidePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ProvidePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RawModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RawModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RawSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RawSource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RecordIdsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RecordIdsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RequestShortener.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RequestShortener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RequireJsStuffPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/RequireJsStuffPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ResolverPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/ResolverPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SetVarMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SetVarMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SingleEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SingleEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Source.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Source.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapDevToolModuleOptionsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapDevToolModuleOptionsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapDevToolPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapDevToolPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapSource.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/SourceMapSource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/Template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/TemplatedPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/TemplatedPathPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/UmdMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/UmdMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/UnsupportedFeatureWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/UnsupportedFeatureWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WarnCaseSensitiveModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WarnCaseSensitiveModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WatchIgnorePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WatchIgnorePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WebpackOptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WebpackOptionsApply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WebpackOptionsDefaulter.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/WebpackOptionsDefaulter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDDefineDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDDefineDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireArrayDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireArrayDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireItemDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/AMDRequireItemDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ConstDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ConstDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsId.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsRequireCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsRequireCall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextElementDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ContextElementDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DelegatedSourceDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DelegatedSourceDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DepBlockHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DepBlockHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DllEntryDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/DllEntryDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledExportsDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledExportsDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModuleDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModuleDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModuleDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModuleDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LabeledModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LoaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LoaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModuleDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModuleDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModulesHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/LocalModulesHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsId.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsRequireId.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsRequireId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleHotAcceptDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleHotAcceptDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleHotDeclineDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/ModuleHotDeclineDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/MultiEntryDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/MultiEntryDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/NullDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/NullDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/NullDependencyTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/NullDependencyTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/PrefetchDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/PrefetchDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireContextPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlockParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlockParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureItemDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsureItemDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsurePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireEnsurePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireHeaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireHeaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludeDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludeDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireIncludePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveHeaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/RequireResolveHeaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/SingleEntryDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/SingleEntryDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/TemplateArgumentDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/TemplateArgumentDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/WebpackMissingModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/WebpackMissingModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/getFunctionExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/dependencies/getFunctionExpression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeHotUpdateChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeHotUpdateChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplate.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplate.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplateAsync.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplateAsync.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeOutputFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeOutputFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeSourcePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeSourcePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeTargetPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeTargetPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeWatchFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/NodeWatchFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/OldNodeWatchFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/node/OldNodeWatchFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/AggressiveMergingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/AggressiveMergingPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/DedupePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/DedupePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/FlagIncludedChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/FlagIncludedChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/LimitChunkCountPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/LimitChunkCountPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/MergeDuplicateChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/MergeDuplicateChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/MinChunkSizePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/MinChunkSizePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/OccurenceOrderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/OccurenceOrderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/OccurrenceOrderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/OccurrenceOrderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/RemoveEmptyChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/RemoveEmptyChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/RemoveParentModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/RemoveParentModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/UglifyJsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/optimize/UglifyJsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/removeAndDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/removeAndDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/web/WebEnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/web/WebEnvironmentPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webpack.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webpack.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/lib/webworker/WebWorkerTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/node_modules/webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/node_modules/webpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/src/components/forms/File/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/components/forms/File/index.js" afterDir="false" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
       <change beforePath="$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/src/reducers/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/reducers/filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/clientV2/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/clientV2/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
+    <ignored path="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,8 +414,13 @@
           <entry key="eslintrc" value="2" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="2" />
-          <entry key="js" value="75" />
+<<<<<<< HEAD
+          <entry key="js" value="87" />
           <entry key="json" value="7" />
+=======
+          <entry key="js" value="112" />
+          <entry key="json" value="8" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           <entry key="md" value="1" />
           <entry key="rnc" value="4" />
           <entry key="scss" value="1" />
@@ -205,8 +432,13 @@
         <counts>
           <entry key="DTD" value="1" />
           <entry key="HTML" value="2" />
+<<<<<<< HEAD
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="75" />
+          <entry key="JavaScript" value="87" />
+=======
+          <entry key="JSON" value="10" />
+          <entry key="JavaScript" value="112" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="RNG Compact" value="4" />
@@ -217,34 +449,66 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2094" />
+<<<<<<< HEAD
+          <entry key="JavaScript" value="3237" />
+=======
+          <entry key="JSON" value="31" />
+          <entry key="JavaScript" value="4616" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="86" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.compare" value="1" />
+        </counts>
+      </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+<<<<<<< HEAD
+          <entry key="project.closed" value="6" />
+=======
+          <entry key="project.closed" value="8" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.29" value="1" />
+<<<<<<< HEAD
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
+=======
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="9" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="6" />
+<<<<<<< HEAD
+          <entry key="ESLintLanguageService" value="8" />
+=======
+          <entry key="ESLintLanguageService" value="9" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="87" />
-          <entry key="js" value="2094" />
+<<<<<<< HEAD
+          <entry key="js" value="3237" />
+=======
+          <entry key="js" value="4616" />
+          <entry key="json" value="31" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           <entry key="md" value="3" />
         </counts>
       </usages-collector>
@@ -259,23 +523,159 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/actions/workflow.js">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1087">
-              <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+            <state relative-caret-position="686">
+              <caret line="291" column="5" lean-forward="true" selection-start-line="291" selection-start-column="5" selection-end-line="291" selection-end-column="5" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#36#82#0" expanded="true" />
+              </folding>
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/workflow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="17" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/AutoComplete/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/index.js">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/Text/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state>
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Text/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/clientV2/src/socket/createRequester.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/socket/createSocket.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientV2/webpack/createConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="114" column="21" selection-start-line="107" selection-start-column="19" selection-end-line="114" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/clientV2/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/clientV2/src/utils/createCollectMetaDataWorkflow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+=======
+        <entry file="file://$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2130">
+              <caret line="156" column="28" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+=======
+        <entry file="file://$PROJECT_DIR$/clientV2/src/actions/filters.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/filters.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -283,54 +683,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/filters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+<<<<<<< HEAD
+            <state relative-caret-position="900">
+              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+=======
+            <state relative-caret-position="315">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Module/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="46" column="58" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-545">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <marker date="1542127807420" expanded="true" signature="2252:2466" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientV2/src/actions/filters.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -346,12 +710,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Setting</find>
-      <find>The current workflow is not valid. Please check the modules/wire configuration</find>
-      <find>Result D</find>
-      <find>&quot;Append .j</find>
-      <find>&lt;Detail</find>
-      <find>&lt;Detail mod</find>
+<<<<<<< HEAD
       <find>Append</find>
       <find>checked</find>
       <find>sett</find>
@@ -370,12 +729,44 @@
       <find>keep ids</find>
       <find>&lt;sele</find>
       <find>&lt;Sele</find>
+=======
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
       <find>label</find>
-      <find>render</find>
       <find>Centrality</find>
       <find>workflow</find>
       <find>updateModulePosition</find>
       <find>workflow_UPDA</find>
+      <find>filter</find>
+<<<<<<< HEAD
+      <find>naME</find>
+      <find>filtersById</find>
+      <find>crea</find>
+      <find>Text</find>
+      <find>render</find>
+      <find>renderForm</find>
+=======
+      <find>import reducers from '../../reducers';</find>
+      <find>import reducer</find>
+      <find>import reduce</find>
+      <find>selec</find>
+      <find>FET</find>
+      <find>suc</find>
+      <find>FILTERS_FETCH_SUCCESS</find>
+      <find>name</find>
+      <find>dire</find>
+      <find>value1</find>
+      <find>succes</find>
+      <find>&lt;Filter</find>
+      <find>Filter</find>
+      <find>renderForm</find>
+      <find>react</find>
+      <find>webpa</find>
+      <find>FI</find>
+      <find>renderComponentByType</find>
+      <find>src</find>
+      <find>onSelectChange</find>
+      <find>ev</find>
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/clientV2/src</dir>
@@ -385,13 +776,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/security/nodeworkbench.crt" />
         <option value="$PROJECT_DIR$/security/webworkbench.crt" />
+=======
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
         <option value="$PROJECT_DIR$/security/nodeworkbench.ca" />
         <option value="$PROJECT_DIR$/clientV2/node_modules/react-dom/server.js" />
         <option value="$PROJECT_DIR$/security/server.key" />
@@ -408,7 +803,6 @@
         <option value="$PROJECT_DIR$/clientV2/src/utils/createExecuteData.js" />
         <option value="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/RscriptUpload/index.js" />
         <option value="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/index.js" />
-        <option value="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js" />
         <option value="$PROJECT_DIR$/clientV2/tasks/build" />
         <option value="$PROJECT_DIR$/public_html/lib/adapters/tsconnector.js" />
         <option value="$PROJECT_DIR$/clientV2/src/utils/getInputModules.js" />
@@ -434,9 +828,20 @@
         <option value="$PROJECT_DIR$/clientV2/src/components/app/Root/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/clientV2/src/actions/workflow.js" />
+        <option value="$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js" />
+        <option value="$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/clientV2/src/components/app/Application/index.js" />
         <option value="$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js" />
+        <option value="$PROJECT_DIR$/clientV2/src/reducers/filters.js" />
+=======
+        <option value="$PROJECT_DIR$/clientV2/package.json" />
+        <option value="$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js" />
+        <option value="$PROJECT_DIR$/clientV2/webpack/createConfig.js" />
+        <option value="$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
         <option value="$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js" />
+        <option value="$PROJECT_DIR$/clientV2/src/reducers/filters.js" />
       </list>
     </option>
   </component>
@@ -461,10 +866,17 @@
   <component name="PhpServers">
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1680" />
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="1001" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -486,12 +898,17 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -523,16 +940,17 @@
               <item name="clientV2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
               <item name="clientV2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="FilterForm" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="AutoComplete" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UI" type="b2602c69:ProjectViewProjectNode" />
@@ -541,33 +959,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="Text" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
               <item name="clientV2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="Select" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-            </path>
+=======
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+=======
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="result&#9;null&#9;null&#10;config&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/clientV2/webpack/config.js&#10;confi&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/clientV2/webpack/config.js&#10;user&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/usercreator.js&#10;pg@7.0&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/lib/pgPromise.js&#10;workbench&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/security/nodeworkbench.ca&#10;con&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/clientV2/webpack/config.js&#10;index.&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/public_html/lib/inputex/examples/index.html&#10;postgresinitializer.js&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/postgresInitializer.js&#10;usercreator.js &#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/usercreator.js&#10;server.&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/clientV2/node_modules/react-dom/server.js&#10;usercreator.js&#9;FILE&#9;file:///Users/farbodaprin/Desktop/Workbench Analysis/UI/usercreator.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542127809761" />
+<<<<<<< HEAD
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542818054478" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542295384797" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -578,7 +1000,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -690,7 +1117,16 @@
       <workItem from="1539355232921" duration="818000" />
       <workItem from="1539682947122" duration="11894000" />
       <workItem from="1539701050633" duration="93000" />
+<<<<<<< HEAD
       <workItem from="1542115845345" duration="5807000" />
+      <workItem from="1543189196036" duration="4153000" />
+      <workItem from="1543262323887" duration="2915000" />
+=======
+      <workItem from="1542115845345" duration="33353000" />
+      <workItem from="1542307480978" duration="2838000" />
+      <workItem from="1542452678130" duration="1436000" />
+      <workItem from="1542494868591" duration="42000" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 50f6bf8">
       <created>1535469914225</created>
@@ -703,44 +1139,126 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239662000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="265198000" />
+=======
+    <option name="totallyTimeSpent" value="271524000" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1680" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+<<<<<<< HEAD
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23992674" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15867944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.27913278" />
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.4996986" weight="0.39811912" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="6" weight="0.32893" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32937366" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14102565" side_tool="true" visible="true" weight="0.3377551" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36741215" side_tool="true" visible="true" weight="0.1761062" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.39321074" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6355311" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.85897434" visible="true" weight="0.3377551" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.63258785" visible="true" weight="0.1761062" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.85622317" weight="0.23975904" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+=======
+    <frame x="0" y="23" width="1280" height="1001" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.20355412" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="6" side_tool="true" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4993895" weight="0.27857143" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996986" weight="0.39811912" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32893" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.37118438" side_tool="true" weight="0.19285715" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.497558" weight="0.39285713" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.62881565" weight="0.48141593" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.85775334" weight="0.12920354" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.18559219" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="6" side_tool="true" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4993895" weight="0.27857143" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996986" weight="0.39811912" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32893" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.37118438" side_tool="true" weight="0.19285715" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.497558" weight="0.39285713" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.62881565" visible="true" weight="0.19285715" />
+      <window_info anchor="bottom" id="Run" order="13" sideWeight="0.85775334" weight="0.35714287" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -802,84 +1320,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1200" />
     <MESSAGE value="update the node module - fix compile bug" />
     <MESSAGE value="update the node module - fix the compile bugs" />
     <MESSAGE value="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 50f6bf8" />
     <MESSAGE value="update the node module" />
     <option name="LAST_COMMIT_MESSAGE" value="update the node module" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js</url>
-          <line>55</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Stage/Module/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1566" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/node_modules/react/lib/React.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/JsonInspector/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/node_modules/yargs/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3204">
-          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/JsonInspector/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/TextArea/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Text/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Module/Summary/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/workflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/tasks/compile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -911,6 +1360,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gitignore" />
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/clientV2/src/reducers/filters.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
     <entry file="file://$PROJECT_DIR$/clientV2/src/config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1002,13 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="140" column="16" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1016,9 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,30 +1496,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/actions/workflow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1087">
-          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3435">
+          <caret line="236" column="17" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/Form/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/Select/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,9 +1515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1085,55 +1528,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/actions/user.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/actions/filters.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Module/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="46" column="58" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/createSaveWiringData.js">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/getInputModules.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/hexToRgb.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/getFieldValidationMessage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/shouldComponentUpdate.js">
+=======
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Module/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FormGroup/index.js">
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/actions/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="254">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/filters.js">
+    <entry file="file://$PROJECT_DIR$/clientV2/node_modules/react-select/dist/react-select.es.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="700" column="4" selection-start-line="700" selection-start-column="4" selection-end-line="700" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+<<<<<<< HEAD
+        <state relative-caret-position="686">
+          <caret line="291" column="5" lean-forward="true" selection-start-line="291" selection-start-column="5" selection-end-line="291" selection-end-column="5" />
           <folding>
-            <marker date="1542127807420" expanded="true" signature="2252:2466" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#36#82#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/AutoComplete/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/Text/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Text/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state>
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js">
+=======
+        <state relative-caret-position="-659">
+          <caret line="236" column="17" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/index.js">
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="114" column="21" selection-start-line="107" selection-start-column="19" selection-end-line="114" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/createCollectMetaDataWorkflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/app/Application/Drawer/Detail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/node_modules/extract-text-webpack-plugin/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/webpack/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/actions/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/File/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/socket/createRequester.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/socket/createSocket.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/webpack/createConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/clientV2/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/utils/graphGeneratorModuleFieldFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+=======
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/forms/FilterForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="156" column="28" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/actions/filters.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/components/ui/Select/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientV2/src/reducers/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+>>>>>>> cadc7d76b677e6bf4118ba1094ac9c4c52bfb326
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

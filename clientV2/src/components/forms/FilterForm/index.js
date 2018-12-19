@@ -1,7 +1,8 @@
+/* eslint-disable no-else-return */
 import reduce from 'lodash/collection/reduce';
 import sortBy from 'lodash/collection/sortBy';
 import map from 'lodash/collection/map';
-import React, { PropTypes, createClass } from 'react';
+import React, {createClass, PropTypes} from 'react';
 import Form from 'components/forms/Form';
 import FormGroup from 'components/forms/FormGroup';
 import Text from 'components/forms/Text';
@@ -12,6 +13,7 @@ import Slider from 'components/forms/Slider';
 import Table from 'components/forms/Table';
 import AutoComplete from 'components/forms/AutoComplete';
 import DateRange from 'components/forms/DateRange';
+import graphGeneratorModuleFieldFilter from 'utils/graphGeneratorModuleFieldFilter';
 
 const renderComponentByType = {
     Text: (field, id) => {
@@ -55,12 +57,13 @@ const renderComponentByType = {
         );
     },
     // For legacy component descriptions
-    select: (field, id ) => {
-        const { selectValues, name } = field;
+    select: (field, id, onChangeHandler) => {
+        const {selectValues, name} = field;
         return (
             <Select
-                value={selectValues}
+                value={selectValues} //Value needed FBA4
                 name={name}
+                onSelectChange={onChangeHandler}
                 placeholder={selectValues[0]}
                 options={selectValues}/>
         );
@@ -133,16 +136,51 @@ export default createClass({
         form: PropTypes.object.isRequired
     },
 
+    getInitialState() { //FBA 6
+        if (this.props.form && this.props.form.id && this.props.form.id === 'graphgeneratorfilter') {
+            return {
+                fields: this.props.form.container.fields || []
+            };
+        }
+        else {
+            return {fields: this.props.form || []};
+        }
+    },
+    componentWillReceiveProps(newProps) {
+        if (newProps.form === this.props.form) return;
+        if (newProps.form &&
+            newProps.form.id &&
+            newProps.form.id === 'graphgeneratorfilter'
+        ) {
+            this.setState({fields: newProps.form.container.fields || []});
+        } else if (!newProps.form || !newProps.form.id || newProps.form.id !== 'graphgeneratorfilter') {
+            this.setState({fields: newProps.form || []});
+        }
+    },
+    onSelectChangeHanlder(ev) {
+        console.log(ev);
+        const selectedValue = ev.target.value;
+        if (this.props.form.id === 'graphgeneratorfilter') {
+            debugger;
+            const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
+            // this.renderForm(fields);
+            this.setState({fields}, () => this.renderForm(this.state.fields));
+            this.forceUpdate();
+        }
+    },
+
     renderField(field, id) {
-        console.log(field);
-        const { type } = field;
+        const {type} = field;
         const render = renderComponentByType[type];
         if (!render) return false;
-        return render(field, id);
+        if (type === 'select') {
+            return render(field, id, this.onSelectChangeHanlder);
+        }
+        return render(field, id);// here we add if statement
     },
 
     renderGroup(field, id) {
-        const { label, name } = field;
+        const {label, name} = field;
         return (
             <FormGroup key={id} name={name} label={label}>
                 {this.renderField(field, id)}
@@ -150,26 +188,29 @@ export default createClass({
         );
     },
 
-    renderForm() {
-        const { form } = this.props;
-
+    renderForm(fields) {
+        let f = fields;
+        if (!f) {
+            f = this.props.form;
+        }
         return map(
             sortBy(
-                reduce(form, (acc, field, id) => {
-                    const { rank } = field;
+                reduce(fields, (acc, field, id) => {
+                    const {rank} = field;
                     const el = this.renderGroup(field, id);
-                    acc[id] = { el, rank };
+                    acc[id] = {el, rank};
                     return acc;
                 }, {}),
                 'rank'
-            ), ({ el }) => el);
+            ), ({el}) => el);
     },
 
     render() {
-        const { form, ...props } = this.props;
+        if (!this.state.fields || this.state.fields.length === 0) return null;
+        const {...props} = this.props;
         return (
             <Form {...props}>
-                {this.renderForm()}
+                {this.renderForm(this.state.fields)}
             </Form>
         );
     }

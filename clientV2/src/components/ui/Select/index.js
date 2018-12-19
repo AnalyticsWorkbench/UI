@@ -2,11 +2,10 @@ import reduce from 'lodash/collection/reduce';
 import map from 'lodash/collection/map';
 import sortBy from 'lodash/collection/sortBy';
 import cn from 'classnames';
-import React, { PropTypes, createClass } from 'react';
+import React, {createClass, PropTypes} from 'react';
+import styles from './styles.scss';
 
 const defaultRenderOption = props => <option {...props}/>;
-
-import styles from './styles.scss';
 
 export default createClass({
 
@@ -24,7 +23,8 @@ export default createClass({
         renderOption: PropTypes.func,
         onChange: PropTypes.func.isRequired,
         children: PropTypes.node,
-        className: PropTypes.string
+        className: PropTypes.string,
+        onSelectChange: PropTypes.func
     },
 
     getDefaultProps() {
@@ -101,9 +101,10 @@ export default createClass({
             placeholder,
             className,
             name,
+            onChange,
+            onSelectChange,
             ...props
         } = this.props;
-
         let finalValue = options[value]; // FBA4 here was the bug that numberized final value
         if (placeholder && !value) {
             // Set empty string as default value.
@@ -117,22 +118,18 @@ export default createClass({
                 finalValue = value;
             }
         }
-        if (value === '0') {
-            finalValue = 'Degree';
-        }
-        // if (value === 'Forest-fire') {
-        //     return (
-        //         <div>
-        //             <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
-        //                 {options ? this.renderOptions(options, multiple, placeholder) : children}
-        //             </select>
-        //         </div>
-        //     );
-        // }
-        // noinspection JSAnnotator
         return (
             <div>
-                <select className={cn(className, styles.input)} value={finalValue} multiple={multiple}{...props}>
+                <select
+                    onChange={(ev) => {
+                    this.props.onChange(ev);
+                    this.props.onSelectChange(ev);
+                    }}
+                    className={cn(className, styles.input)}
+                    value={finalValue}
+                    name={name}
+                    multiple={multiple}{...props}
+                >
                     {options ? this.renderOptions(options, multiple, placeholder) : children}
                 </select>
             </div>

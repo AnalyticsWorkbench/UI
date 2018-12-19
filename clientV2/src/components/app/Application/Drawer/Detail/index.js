@@ -1,7 +1,7 @@
+/* eslint-disable no-else-return,spaced-comment,no-trailing-spaces */
 import cn from 'classnames';
-import React, { PropTypes, createClass } from 'react';
-
-import { colorsByFilterCategory } from 'config';
+import React, {createClass, PropTypes} from 'react';
+import {colorsByFilterCategory} from 'config';
 import shouldComponentUpdate from 'utils/shouldComponentUpdate';
 import FilterForm from 'components/forms/FilterForm';
 import Tabs from 'components/ui/Tabs';
@@ -83,16 +83,36 @@ const Detail = createClass({
 
         // For compatibility with old filter descriptions.
          if (form === undefined) {
-             return (
-                 <FilterForm
-                     //form={form}
-                     form={filter.container.fields}
-                     values={value}
-                     messages={messages}
-                     onChange={this.hanldeFilterFormChange}/>
-             );
+             if (filter.name === 'Graph Generator Filter') {
+                 return (
+                     <FilterForm
+                         //form={form}
+                         form={filter} //FBA 6 for customising Graph Generator
+                         values={value}
+                         messages={messages}
+                         onChange={this.hanldeFilterFormChange}/>
+                 );
+             } else {
+                 return (
+                     <FilterForm
+                         //form={form}
+                         form={filter.container.fields}
+                         values={value}
+                         messages={messages}
+                         onChange={this.hanldeFilterFormChange}/>
+                 );
+             }
          } else {
-
+             if (filter.name === 'Graph Generator Filter') {
+                 return (
+                     <FilterForm
+                         // form={form}
+                         form={filter.container} // FBA6 GGF
+                         values={value}
+                         messages={messages}
+                         onChange={this.hanldeFilterFormChange}/>
+                 );
+             } else {
              return (
                  <FilterForm
                      form={form}
@@ -101,6 +121,7 @@ const Detail = createClass({
                      messages={messages}
                      onChange={this.hanldeFilterFormChange}/>
              );
+             }
          }
         } else if (tab === 'meta') {
             return (
