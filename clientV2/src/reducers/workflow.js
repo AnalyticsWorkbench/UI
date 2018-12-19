@@ -229,10 +229,11 @@ export default function workflow(state = initialState, action) {
         }
 
         case 'WORKFLOW_ADD_MODULE': {
-            const filter = action.payload;
+            const {filter, recommendations} = action.payload;
             const { id: filterId, container } = filter;
             const { form } = container;
             const id = createId(state.modulesById);
+            debugger;
             return {
                 ...state,
                 modulesById: {
@@ -249,18 +250,19 @@ export default function workflow(state = initialState, action) {
                         }
                     }
                 },
-                // Dies sollte demnächst aus der Datenbank kommen.
-                recommendedModules : [
-                    {
-                        filterId: filterId,
-                        value: 'betweenness',
-                        config: {
-                            position: [100, 100]
-                        }
-                    }
-                ],
+                recommendedModules : recommendations,
                 changed: true
             };
+        }
+
+        case 'WORKFLOW_ADD_MODULE_SUCCESS': {
+            console.log("Supertoll");
+            return {...state};
+        }
+
+        case 'WORKFLOW_ADD_MODULE_ERROR': {
+            console.log("Supertoll Error");
+            return {...state};
         }
 
         case 'WORKFLOW_REMOVE_MODULE': {

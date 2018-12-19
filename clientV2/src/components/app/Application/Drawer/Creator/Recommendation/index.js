@@ -22,7 +22,7 @@ export default createClass({
     shouldComponentUpdate: shouldComponentUpdate,
 
     render() {
-        console.log(filters);
+
         const {
             category,
             filters,
@@ -39,7 +39,7 @@ export default createClass({
                 No Recommendation
             </div>
         );
-
+        console.log(filters);
         if (filters) {
             cmp = (
                 <div
@@ -53,6 +53,7 @@ export default createClass({
                         {map(filters, filter => {
                             const { filterId, value } = filter;
                             const handleClick = () => add(filter);
+                            console.log(value);
                             return (
                                 <div
                                     key={filterId}

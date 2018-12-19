@@ -75,7 +75,6 @@ export function fetch() {
     };
 }
 
-
 export function reset() {
     return ({ dispatch }) => {
         const confirmed = confirm('Are you sure that you want to discard the current workflow?');
@@ -94,10 +93,31 @@ export function showTab(tab) {
 }
 
 export function addModule(filter) {
-    return {
-        type: 'WORKFLOW_ADD_MODULE',
-        payload: filter
-    };
+    return ({dispatch, getState, request}) => {
+
+        const { workflow } = getState();
+
+        request({
+            command: 'getModuleRecommendations',
+            data: workflow
+        }).then(
+            results => {
+                debugger;
+                console.log(results);
+                dispatch({
+                    type: 'WORKFLOW_ADD_MODULE',
+                    payload: {
+                        filter: filter,
+                        recommendations: results
+                    }
+                })
+            }
+        )
+    }
+    //return {
+      //  type: 'WORKFLOW_ADD_MODULE',
+      //  payload: filter
+    //};
 }
 
 export function addRecommendedModule(filter) {
