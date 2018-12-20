@@ -56,7 +56,7 @@ export default createClass({
                             console.log(value);
                             return (
                                 <div
-                                    key={filterId}
+                                    key={filterId + JSON.stringify(value)}
                                     className={styles.filter}
                                     onClick={handleClick}>
                                     <div
