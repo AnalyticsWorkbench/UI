@@ -11,7 +11,7 @@ $ mkdir security
 $ cd UI/public_html
 $ mkdir results
 ```
-## CLientV2
+## ClientV2
 <img src="https://user-images.githubusercontent.com/17232450/45694821-61fc9d80-bb60-11e8-8eed-99125b729fa9.png" width="340" height="380">
 
 
