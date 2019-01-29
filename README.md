@@ -194,17 +194,6 @@ npm ERR! webworkbench-client-v2@1.0.0 build: `tasks/build` ...
  ###### solution is update webpack.
  npm install --save-dev webpack
  
- ### Package does not exist 
-
-After execution if you got error 
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
-
-Package does not exist, it might be the IDE change your defult java version because of other projects. e.g. from JAVA 8 to JAVA 10. 
-accepteble version for current Workbench is 1.8 according to this figure:
-![screenshot 2019-01-29 11 32 23](https://user-images.githubusercontent.com/17232450/51902218-bf7be300-23b9-11e9-8cc6-1c12600dc7dc.png)
-
- 
  
  ### Security
  
