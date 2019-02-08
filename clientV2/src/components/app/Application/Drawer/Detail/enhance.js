@@ -42,7 +42,10 @@ const selector = createSelector(
 		const isOutput = isOutputModule(module, filtersById);
 		const meta = metaDataByModuleId[moduleId];
 		const metaInput = getMetaData(moduleId, modulesById, wiresById, filtersById, metaDataByModuleId);
-
+		/**
+		 * here we get the Metadata into meta data tabs according to moduleId and filterbyid
+		 * @type {*|*|*}
+		 */
 		const form = getForm(module, filter, metaInput);
 		const { value } = module;
 		const messages = reduce(form, (acc, field, id) => {

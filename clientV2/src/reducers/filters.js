@@ -53,6 +53,7 @@ export default function filters(state = initialState, action) {
 				...state,
 				fetching: false,
                 byId: indexFilters(([...action.payload, directUploaderConfiguration]))
+
             };
         }
 		case 'FILTERS_FETCH_ERROR': {

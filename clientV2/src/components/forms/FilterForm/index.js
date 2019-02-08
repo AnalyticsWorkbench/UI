@@ -162,14 +162,10 @@ export default createClass({
         const selectedValue = ev.target.value;
         if (this.props.form.id === 'graphgeneratorfilter') {
             debugger;
-            if (selectedValue === 'TRUE' || selectedValue === 'FALSE') { // FBA7 exclude if the value of the target is TRUE or FALSE
-                return true;
-            } else {
-                const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
-                // this.renderForm(fields);
-                this.setState({fields}, () => this.renderForm(this.state.fields));
-                this.forceUpdate();
-            }
+            const fields = graphGeneratorModuleFieldFilter(this.props.form.container, selectedValue);
+            // this.renderForm(fields);
+            this.setState({fields}, () => this.renderForm(this.state.fields));
+            this.forceUpdate();
         }
     },
 
@@ -218,4 +214,5 @@ export default createClass({
             </Form>
         );
     }
+
 });

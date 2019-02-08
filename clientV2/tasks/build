@@ -5,4 +5,4 @@ rm -rf ../public_html/clientV2
 
 ## temporary UV_THREADPOOL_SIZE hack for node-sass
  see https://github.com/jtangelder/sass-loader/issues/100
-##UV_THREADPOOL_SIZE=100 NODE_ENV=production NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
+## UV_THREADPOOL_SIZE=100 NODE_ENV=production NODE_PATH=. ./node_modules/.bin/babel-node ./node_modules/.bin/webpack --progress --colors
