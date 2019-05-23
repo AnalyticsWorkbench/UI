@@ -150,6 +150,12 @@ then do "npm install" again.
 
 <img src="https://user-images.githubusercontent.com/17232450/43264790-4e1fd0a0-90e7-11e8-91da-3b23b3a63a8f.png" width="660" height="380">
 
+###### error:
+<img src="https://user-images.githubusercontent.com/46486706/58267600-3f242800-7d84-11e9-9059-96e3ad646ef4.png" width="560" height="320">
+
+
+$ chmod +v 755 the_file_name
+
 
 ###### error : 
 Node Sass does not yet support your current environment (macOS 10.12.1, Node 7.0.0)
